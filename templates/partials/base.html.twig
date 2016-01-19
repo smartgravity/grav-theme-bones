@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css/bones.css',101) %}
+        {% if theme_config.fontawesome.enabled %}
+            {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
+        {% endif %}
+        {% if theme_config.google_fonts_logo.enabled %}
+            {% do assets.addCss('//fonts.googleapis.com/css?family=Special+Elite',100) %}
+        {% endif %}
+    {% endblock %}
+    {{ assets.css() }}
+    {% do assets.addJs('jquery',109) %}
+    {{ assets.js() }}
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-{{ theme_config.mobilemenu_position }}" id="offCanvas" data-off-canvas data-position="{{ theme_config.mobilemenu_position }}">
+            <div class="row sg-center sg-spacer-small">
+                <div class="sg-content">
+                    {% set content = pages.find('/mobilemenu').content %}
+                    {% if content %}
+                        {{ content }}
+                    {% endif %}
+                </div>
+            </div>
+            <div id="mobile-navigation">
+                {% block mobile_navigation %}
+                {% include 'partials/navigation_mobile.html.twig' %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+
+        {% block header %}
+        <header id="header">
+
+        	<div class="row sg-header">
+	            <div id="logo">
+	                <a href="{{ base_url == '' ? '/' : base_url }}">
+						{% set image = pages.find('/logo').media.images|first %}
+						{% if image %}
+						    {{ image.cropResize(96,96).html }}
+						{% endif %}
+	                </a>
+	            </div>
+	            <div id="sg-header-title">
+	                <a href="{{ base_url == '' ? '/' : base_url }}">
+	                    <h3{% if theme_config.google_fonts_logo.enabled %} style="font-family: 'Special Elite', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;"{% endif %}>{{ config.site.title }}</h3>
+	                </a>
+	            </div>
+	            <div id="navigation" class="{% if theme_config.mobilemenu_breakpoint == 'all' %}hide{% else %}show-for-{{ theme_config.mobilemenu_breakpoint }}{% endif %}">
+	                {% block header_extra %}{% endblock %}
+	                {% if config.plugins.langswitcher.enabled %}
+	                {% include 'partials/langswitcher.html.twig' %}
+	                {% endif %}
+	                {% block header_navigation %}
+	                {% include 'partials/navigation.html.twig' %}
+	                {% endblock %}
+	            </div>
+                <i class="mobile-nav-toggle fa fa-fw fa-bars float-right hide-for-{{ theme_config.mobilemenu_breakpoint }}" data-open="offCanvas"></i>
+            </div>
+        </header>
+        {% endblock %}
+
+        {% block body %}
+        <section id="body" class="{{ class }}">
+            {% block content %}{% endblock %}
+        </section>
+        {% endblock %}
+
+        {% block footer %}
+        <footer id="footer">
+            <div class="row sg-center">
+    			{% set content = pages.find('/footer').content %}
+    			{% if content %}
+    			    {{ content }}
+    			{% endif %}
+            </div>
+        </footer>
+        {% endblock %}
+
+        {% block bottom %}
+            {% block javascripts %}
+                {% do assets.addJs('theme://bower_components/what-input/what-input.js',{'priority':105, 'group':'bottom'}) %}
+                {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.core.js',{'priority':104, 'group':'bottom'}) %}
+                
+                {% if page.header.foundation_abide_js == "disabled" %}
+                {% elseif page.header.foundation_abide_js == "enabled" or theme_config.foundation_abide_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.abide.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_accoridion_js == "disabled" %}
+                {% elseif page.header.foundation_accoridion_js == "enabled" or theme_config.foundation_accoridion_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.accoridion.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_accordionMenu_js == "disabled" %}
+                {% elseif page.header.foundation_accordionMenu_js == "enabled" or theme_config.foundation_accordionMenu_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.accordionMenu.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_drilldown_js == "disabled" %}
+                {% elseif page.header.foundation_drilldown_js == "enabled" or theme_config.foundation_drilldown_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.drilldown.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_dropdown_js == "disabled" %}
+                {% elseif page.header.foundation_dropdown_js == "enabled" or theme_config.foundation_dropdown_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.dropdown.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_dropdownMenu_js == "disabled" %}
+                {% elseif page.header.foundation_dropdownMenu_js == "enabled" or theme_config.foundation_dropdownMenu_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.dropdownMenu.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_equalizer_js == "disabled" %}
+                {% elseif page.header.foundation_equalizer_js == "enabled" or theme_config.foundation_equalizer_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.equalizer.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_interchange_js == "disabled" %}
+                {% elseif page.header.foundation_interchange_js == "enabled" or theme_config.foundation_interchange_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.interchange.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_magellan_js == "disabled" %}
+                {% elseif page.header.foundation_magellan_js == "enabled" or theme_config.foundation_magellan_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.magellan.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_offcanvas_js == "disabled" %}
+                {% elseif page.header.foundation_offcanvas_js == "enabled" or theme_config.foundation_offcanvas_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.offcanvas.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_orbit_js == "disabled" %}
+                {% elseif page.header.foundation_orbit_js == "enabled" or theme_config.foundation_orbit_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.orbit.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_responsiveMenu_js == "disabled" %}
+                {% elseif page.header.foundation_responsiveMenu_js == "enabled" or theme_config.foundation_responsiveMenu_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.responsiveMenu.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_responsiveToggle_js == "disabled" %}
+                {% elseif page.header.foundation_responsiveToggle_js == "enabled" or theme_config.foundation_responsiveToggle_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.responsiveToggle.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_reveal_js == "disabled" %}
+                {% elseif page.header.foundation_reveal_js == "enabled" or theme_config.foundation_reveal_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.reveal.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_slider_js == "disabled" %}
+                {% elseif page.header.foundation_slider_js == "enabled" or theme_config.foundation_slider_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.slider.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_sticky_js == "disabled" %}
+                {% elseif page.header.foundation_sticky_js == "enabled" or theme_config.foundation_sticky_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.sticky.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_tabs_js == "disabled" %}
+                {% elseif page.header.foundation_tabs_js == "enabled" or theme_config.foundation_tabs_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.tabs.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_toggler_js == "disabled" %}
+                {% elseif page.header.foundation_toggler_js == "enabled" or theme_config.foundation_toggler_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.toggler.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_tooltip_js == "disabled" %}
+                {% elseif page.header.foundation_tooltip_js == "enabled" or theme_config.foundation_tooltip_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.tooltip.js',{'priority':103, 'group':'bottom'}) %}
+                {% endif %}
+
+                {% if page.header.foundation_util_box_js == "disabled" %}
+                {% elseif page.header.foundation_util_box_js == "enabled" or theme_config.foundation_util_box_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.box.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_keyboard_js == "disabled" %}
+                {% elseif page.header.foundation_util_keyboard_js == "enabled" or theme_config.foundation_util_keyboard_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.keyboard.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_mediaQuery_js == "disabled" %}
+                {% elseif page.header.foundation_util_mediaQuery_js == "enabled" or theme_config.foundation_util_mediaQuery_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.mediaQuery.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_motion_js == "disabled" %}
+                {% elseif page.header.foundation_util_motion_js == "enabled" or theme_config.foundation_util_motion_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.motion.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_nest_js == "disabled" %}
+                {% elseif page.header.foundation_nest_util_js == "enabled" or theme_config.foundation_util_nest_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.nest.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_timerAndImageLoader_js == "disabled" %}
+                {% elseif page.header.foundation_util_timerAndImageLoader_js == "enabled" or theme_config.foundation_util_timerAndImageLoader_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_touch_js == "disabled" %}
+                {% elseif page.header.foundation_util_touch_js == "enabled" or theme_config.foundation_util_touch_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.touch.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+                {% if page.header.foundation_util_triggers_js == "disabled" %}
+                {% elseif page.header.foundation_util_triggers_js == "enabled" or theme_config.foundation_util_triggers_js.enabled %}
+                    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.triggers.js',{'priority':102, 'group':'bottom'}) %}
+                {% endif %}
+
+                {% do assets.addInlineJs('$(document).foundation();',{'priority':99, 'pipeline':false, 'group':'bottom'}) %}
+                {% if theme_config.google_prettify.enabled %}
+                    {% do assets.addJs('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js',{'priority':100, 'group':'bottom'}) %}
+                {% endif %}
+            {% endblock %}
+            {{ assets.js('bottom') }}
+        {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

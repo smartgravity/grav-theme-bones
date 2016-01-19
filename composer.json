@@ -1,0 +1,28 @@
+{
+    "name": "smartgravity/grav-theme-bones",
+    "type": "grav-theme",
+    "description": "A Grav theme based on Foundation.",
+    "keywords": ["theme","grav","bones","foundation"],
+    "homepage": "http://demos.smartgravity.com/grav-bones",
+    "license": "MIT",
+    "support": {
+        "chat": "irc://irc.freenode.org/grav"
+    },
+    "authors": [
+        {
+            "name": "SmartGravity",
+            "email": "info@smartgravity.com",
+            "homepage": "http://www.smartgravity.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "bones",
+        "installer-paths": {
+            "user/themes/{$name}/": ["smartgravity/grav-theme-bones"]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{% set background_image = page.media.images|first %}
+{% set css = page.header.styles %}
+<div class="modular-row{% if css %} {{ css }}{% endif %}{% if background_image %} sg-background{% endif %}" {% if background_image %}style="background-image: url({{ background_image.url }});"{% endif %}>
+	<div class="row">
+		<div class="sg-content">
+	    {{ content }}
+	   </div>
+	</div>
+</div>

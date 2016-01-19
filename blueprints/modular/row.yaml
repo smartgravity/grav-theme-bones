@@ -1,0 +1,28 @@
+title: Row
+@extends: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/row
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/row
+                  @data-options: '\Grav\Common\Page\Pages::modularTypes'
+        styles:
+          type: tab
+          title: Row Style
+          fields:
+            header.styles:
+              type: textarea
+              label: CSS Classes

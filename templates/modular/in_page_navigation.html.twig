@@ -1,0 +1,22 @@
+<div id="sticky-menu">
+	<div data-sticky-container>
+		<div class="sg-in-page-menu sticky" data-sticky data-top-anchor="sticky-menu" data-btm-anchor="footer:bottom" data-margin-top="0" data-sticky-on="small">
+			<div class="modular-row">
+				{{ content }}
+			</div>
+			<div class="sg-center">
+				<div class="top-bar" id="sg-in-page-navigation">
+			    <ul class="menu" data-magellan>
+				    {% for module in page.parent.collection() %}
+				    	{% if module.header.title|contains('In Page Navigation') or module.header.title|contains('Showcase') %}
+				    	{% else %}
+				        <li><a href="#{{ module.header.title|underscorize }}">{{ module.header.title }}</a></li>
+				    	{% endif %}
+				    {% endfor %}
+						<li><a href="#top">Top <span class="fa fa-arrow-up"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

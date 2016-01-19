@@ -1,0 +1,301 @@
+// SmartGravity Bones Grav Theme
+// www.smartgravity.com
+// Licensed under MIT Open Source
+
+// Bones Colors
+
+/* BEGIN SmartGravity HEADER */
+#header {
+  border-color: $light-gray;
+  #sg-header-title h3 {
+    color: $black;
+  }
+}
+/* END SmartGravity HEADER */
+
+/* BEGIN SmartGravity Mainmenu Navigation */
+#sg-mainmenu, #sg-mainmenu-mobile {
+  .menu>li {
+    &>a {
+      border-color: $medium-gray;
+      background-color: $white;
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+    &.active>a {
+      background-color: $light-gray;
+    }
+  }
+}
+.mobile-nav-toggle {
+  color: $primary-color;
+  &:hover {
+    color: scale-color($primary-color, $lightness: 30%);
+  }
+}
+/* END SmartGravity Mainmenu Navigation */
+
+/* BEGIN TAXONOMY TAGS */
+.tags a {
+  border-color: $medium-gray;
+  background-color: $white;
+  color: $primary-color;
+  &:hover {
+    color: scale-color($primary-color, $lightness: 30%);
+  }
+  &.active {
+    background-color: $light-gray;
+  }
+}
+/* END TAXONOMY TAGS */
+
+/* BEGIN BREADCRUMBS */
+.sg-breadcrumb {
+  border-color: $light-gray;
+}
+/* END BREADCRUMBS */
+
+/* BEGIN SmartGravity MAIN CONTENT */
+.top-bar#sg-in-page-navigation {
+  background-color: $white;
+  color: $secondary-color;
+  a {
+    color: $secondary-color;
+  }
+  ul {
+    background-color: transparent;
+  }
+}
+#sg-in-page-navigation {
+  border-color: $medium-gray;
+  a.active {
+    color: $primary-color;
+  }
+}
+pre {
+  background: $light-gray;
+  border-color: $medium-gray;
+  code {
+    background-color: transparent;
+  }
+}
+code {
+  background-color: $light-gray;
+  border-color: $medium-gray;
+}
+/* END SmartGravity MAIN CONTENT */
+
+/* BEGIN SmartGravity FOOTER */
+#footer {
+  border-color: $medium-gray;
+}
+/* END SmartGravity FOOTER */
+
+/* BEGIN SmartGravity COLORS */
+.sg {
+  &-highlight-dark, &-highlight-dark .sg-content, &-color-light-gray, &-color-medium-gray {
+    color: $black;
+    a {
+      color: rgba($black, 0.75);
+      &:hover {
+        color: rgba($black, 0.9);
+      }
+    }
+  }
+}
+.column {
+  &-highlight-dark, &-highlight-dark .sg-content, &-color-light-gray, &-color-medium-gray {
+    .sg-column-block {
+      color: $black;
+      a {
+        color: rgba($black, 0.75);
+        &:hover {
+          color: rgba($black, 0.9);
+        }
+      }
+    }
+  }
+}
+.sg {
+  &-highlight-light, &-highlight-light .sg-content, &-color-dark-gray, &-color-yellow, &-color-orange, &-color-blue, &-color-red, &-color-purple, &-color-green {
+    color: $white;
+    a {
+      color: rgba($white, 0.75);
+      &:hover {
+        color: rgba($white, 0.9);
+      }
+    }
+  }
+}
+.column {
+  &-highlight-light, &-highlight-light .sg-content, &-color-dark-gray, &-color-yellow, &-color-orange, &-color-blue, &-color-red, &-color-purple, &-color-green {
+      .sg-column-block {
+      color: $white;
+      a {
+        color: rgba($white, 0.75);
+        &:hover {
+          color: rgba($white, 0.9);
+        }
+      }
+    }
+  }
+}
+.sg-color-light-gray {
+  background-color: $light-gray;
+}
+.sg-color-medium-gray {
+  background-color: $medium-gray;
+}
+.sg-color-dark-gray {
+  background-color: $really-dark-gray;
+}
+.sg-color-yellow {
+  background-color: $yellow;
+}
+.sg-color-orange {
+  background-color: $orange;
+}
+.sg-color-blue {
+  background-color: $blue;
+}
+.sg-color-red {
+  background-color: $red;
+}
+.sg-color-purple {
+  background-color: $purple;
+}
+.sg-color-green {
+  background-color: $green;
+}
+
+.sg-column-block {
+  .column-color-light-gray & {
+    background-color: $light-gray;
+  }
+  .column-color-medium-gray & {
+    background-color: $medium-gray;
+  }
+  .column-color-dark-gray & {
+    background-color: $really-dark-gray;
+  }
+  .column-color-yellow & {
+    background-color: $yellow;
+  }
+  .column-color-orange & {
+    background-color: $orange;
+  }
+  .column-color-blue & {
+    background-color: $blue;
+  }
+  .column-color-red & {
+    background-color: $red;
+  }
+  .column-color-purple & {
+    background-color: $purple;
+  }
+  .column-color-green & {
+    background-color: $green;
+  }
+}
+
+.button {
+  &.light {
+    color: $black;
+    background-color: $white;
+    &:hover, &:focus {
+      color: rgba($black, 0.75);
+      background-color: rgba($white, 0.75);
+    }
+  }
+  &.dark {
+    color: $white;
+    background-color: $black;
+    &:hover, &:focus {
+      color: rgba($white, 0.75);
+      background-color: rgba($black, 0.75);
+    }
+  }
+  &.hollow {
+    &.light {
+      color: $white;
+      border-color: $white;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: rgba($white, 0.75);
+        border-color: rgba($white, 0.75);
+      }
+    }
+    &.dark {
+      color: $black;
+      border-color: $black;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: rgba($black, 0.75);
+        border-color: rgba($black, 0.75);
+      }
+    }
+  }
+}
+
+blockquote {
+  border-color: $light-gray;
+  p {
+    color: $dark-gray;
+  }
+  cite {
+    color: $dark-gray;
+  }
+}
+blockquote > blockquote > blockquote {
+  > p {
+    // Yellow
+    border-color: $notes-info-border;
+    border-radius: $global-radius;
+    background: $notes-info-bg;
+    color: darken($notes-info-border,15%);
+    a {
+      color: darken($notes-info-border,25%);
+      &:hover {
+        color: lighten($notes-info-border,5%);
+      }
+    }
+  }
+  > blockquote > p {
+    // Red
+    border-color: $notes-warning-border;
+    background: $notes-warning-bg;
+    color: darken($notes-warning-border,15%);
+    a {
+      color: darken($notes-warning-border,25%);
+      &:hover {
+        color: lighten($notes-warning-border,5%);
+      }
+    }
+  }
+  > blockquote > blockquote > p {
+    // Blue
+    border-color: $notes-note-border;
+    background: $notes-note-bg;
+    color: darken($notes-note-border,15%);
+    a {
+      color: darken($notes-note-border,25%);
+      &:hover {
+        color: lighten($notes-note-border,5%);
+      }
+    }
+  }
+  > blockquote > blockquote > blockquote > p {
+    // Green
+    border-color: $notes-success-border;
+    background: $notes-success-bg;
+    color: darken($notes-success-border,15%);
+    a {
+      color: darken($notes-success-border,25%);
+      &:hover {
+        color: lighten($notes-success-border,5%);
+      }
+    }
+  }
+}
+/* END SmartGravity COLORS */

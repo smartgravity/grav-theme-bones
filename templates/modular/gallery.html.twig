@@ -1,0 +1,23 @@
+{% set css = page.header.styles %}
+{% set columns = page.header.column_number %}
+<div class="modular-row{% if css %} {{ css }}{% endif %}">
+  <div class="row">
+    <div class="sg-content">
+      <h2 class="sg-title">{{ page.title }}</h2>
+      {{ content }}
+      <div class="sg-gallery-row">
+        <div class="row small-up-{{ (columns // 3) }} medium-up-{{ (columns // 2) + 1 }} large-up-{{ columns }}">
+        {% for item in page.header.gallery %}
+        {% set item_title = item.title %}
+        {% set item_desc = item.description %}
+          <div class="column">
+            {{ page.media[item.image].lightbox(1920,1080).cropResize(960,540).html('Image') }}
+            {% if item_title %}<h5>{{ item_title }}</h5>{% endif %}
+            {% if item_desc %}<p>{{ item_desc }}</p>{% endif %}
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
