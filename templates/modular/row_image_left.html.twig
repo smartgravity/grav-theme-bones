@@ -1,0 +1,18 @@
+{% set background_image = page.media['background.jpg'] %}
+{% set css = page.header.styles %}
+<div class="modular-row{% if css %} {{ css }}{% endif %}{% if background_image %} sg-background{% endif %}" {% if background_image %}style="background-image: url({{ background_image.url }});"{% endif %}>
+	<div class="row">
+		<div class="sg-content">
+			<h2 class="sg-title">{{ page.title }}</h2>
+			<div class="medium-6 columns small-nopaddingleft small-nopaddingright medium-nopaddingleft sg-center">
+				{% set image = page.media.images|first %}
+		    {% if image %}
+		        {{ image.cropResize(960,960).html() }}
+		    {% endif %}
+			</div>
+			<div class="medium-6 columns medium-nopaddingright">
+			  {{ content }}
+			</div>
+		</div>
+	</div>
+</div>

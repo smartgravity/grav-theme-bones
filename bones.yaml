@@ -1,0 +1,19 @@
+enabled: true
+dropdown:
+  enabled: false
+fontawesome:
+  enabled: true
+google_fonts_logo:
+  enabled: true
+google_prettify:
+  enabled: true
+mobilemenu_breakpoint: medium
+mobilemenu_position: left
+
+
+streams:
+  schemes:
+    theme:
+      type: ReadOnlyStream
+      paths:
+        - user/themes/bones

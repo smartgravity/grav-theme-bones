@@ -1,0 +1,248 @@
+title: Item
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+
+      fields:
+        foundation:
+          type: tab
+          title: Foundation
+
+          fields:
+
+            js_files_title:
+              type: section
+              title: Javascript
+              underline: true
+
+            header.foundation_abide_js:
+                type: select
+                label: abide
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_accordion_js:
+                type: select
+                label: accordion
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_accordionMenu_js:
+                type: select
+                label: accordionMenu
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_drilldown_js:
+                type: select
+                label: drilldown
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_dropdown_js:
+                type: select
+                label: dropdown
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_dropdownMenu_js:
+                type: select
+                label: dropdownMenu
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_equalizer_js:
+                type: select
+                label: equalizer
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_interchange_js:
+                type: select
+                label: interchange
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_magellan_js:
+                type: select
+                label: magellan
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_offcanvas_js:
+                type: select
+                label: offcanvas
+                highlight: 1
+                default: 1
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_orbit_js:
+                type: select
+                label: orbit
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_responsiveMenu_js:
+                type: select
+                label: responsiveMenu
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_responsiveToggle_js:
+                type: select
+                label: responsiveToggle
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_reveal_js:
+                type: select
+                label: reveal
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_slider_js:
+                type: select
+                label: slider
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_sticky_js:
+                type: select
+                label: sticky
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_tabs_js:
+                type: select
+                label: tabs
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_toggler_js:
+                type: select
+                label: toggler
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_tooltip_js:
+                type: select
+                label: tooltip
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+
+            js_utilities_title:
+              type: section
+              title: Javascript Utilities
+              underline: true
+
+            header.foundation_util_box_js:
+                type: select
+                label: util box
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_keyboard_js:
+                type: select
+                label: util keyboard
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_mediaQuery_js:
+                type: select
+                label: util mediaQuery
+                highlight: 1
+                default: 1
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_motion_js:
+                type: select
+                label: util motion
+                highlight: 1
+                default: 1
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_nest_js:
+                type: select
+                label: util nest
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_timerAndImageLoader_js:
+                type: select
+                label: util timerAndImageLoader
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_touch_js:
+                type: select
+                label: util touch
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+            header.foundation_util_triggers_js:
+                type: select
+                label: util triggers
+                highlight: 1
+                default: 1
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+

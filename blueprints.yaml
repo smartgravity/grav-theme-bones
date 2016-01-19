@@ -1,0 +1,357 @@
+name: Bones
+version: 0.1.0
+description: "A **Grav** theme built with **Foundation**."
+icon: cubes
+author:
+  name: smartgravity
+  email: info@smartgravity.com
+  url: http://www.smartgravity.com
+homepage: https://github.com/smartgravity/grav-theme-bones
+demo: http://demos.smartgravity.com/grav-bones
+keywords: bones, theme, foundation, core, simple, responsive, basic
+bugs: https://github.com/smartgravity/grav-theme-bones/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    general_options_title:
+      type: display
+      label: <h4>General Options</h4>
+    fontawesome.enabled:
+        type: toggle
+        label: FontAwesome
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    google_fonts_logo.enabled:
+        type: toggle
+        label: Google Fonts for Logo
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    google_prettify.enabled:
+        type: toggle
+        label: Google Prettify Code
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    menu_options_title:
+      type: display
+      label: <h4>Menu Options</h4>
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Mainmenu
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    mobilemenu_breakpoint:
+      type: select
+      label: Mobile Menu Breakpoint
+      classes: fancy
+      default: medium
+      options:
+        'large': 'Large'
+        'medium': 'Medium'
+        'all': 'Mobile for All'
+    mobilemenu_position:
+      type: select
+      label: Mobile Menu Position
+      classes: fancy
+      default: left
+      options:
+        'left': 'left'
+        'right': 'right'
+
+    js_files_title:
+      type: display
+      label: <h4>Javascript</h4>
+    foundation_abide_js.enabled:
+        type: toggle
+        label: abide
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_accordion_js.enabled:
+        type: toggle
+        label: accordion
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_accordionMenu_js.enabled:
+        type: toggle
+        label: accordionMenu
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_drilldown_js.enabled:
+        type: toggle
+        label: drilldown
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_dropdown_js.enabled:
+        type: toggle
+        label: dropdown
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_dropdownMenu_js.enabled:
+        type: toggle
+        label: dropdownMenu
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_equalizer_js.enabled:
+        type: toggle
+        label: equalizer
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_interchange_js.enabled:
+        type: toggle
+        label: interchange
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_magellan_js.enabled:
+        type: toggle
+        label: magellan
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_offcanvas_js.enabled:
+        type: toggle
+        label: offcanvas
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_orbit_js.enabled:
+        type: toggle
+        label: orbit
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_responsiveMenu_js.enabled:
+        type: toggle
+        label: responsiveMenu
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_responsiveToggle_js.enabled:
+        type: toggle
+        label: responsiveToggle
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_reveal_js.enabled:
+        type: toggle
+        label: reveal
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_slider_js.enabled:
+        type: toggle
+        label: slider
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_sticky_js.enabled:
+        type: toggle
+        label: sticky
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_tabs_js.enabled:
+        type: toggle
+        label: tabs
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_toggler_js.enabled:
+        type: toggle
+        label: toggler
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_tooltip_js.enabled:
+        type: toggle
+        label: tooltip
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    js_utilities_title:
+      type: display
+      label: <h4>Javascript Utilities</h4>
+    foundation_util_box_js.enabled:
+        type: toggle
+        label: util box
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_keyboard_js.enabled:
+        type: toggle
+        label: util keyboard
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_mediaQuery_js.enabled:
+        type: toggle
+        label: util mediaQuery
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_motion_js.enabled:
+        type: toggle
+        label: util motion
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_nest_js.enabled:
+        type: toggle
+        label: util nest
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_timerAndImageLoader_js.enabled:
+        type: toggle
+        label: util timerAndImageLoader
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_touch_js.enabled:
+        type: toggle
+        label: util touch
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+    foundation_util_triggers_js.enabled:
+        type: toggle
+        label: util triggers
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

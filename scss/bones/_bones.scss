@@ -1,0 +1,527 @@
+// SmartGravity Bones Grav Theme
+// www.smartgravity.com
+// Licensed under MIT Open Source
+
+// Bones Theme Styles
+
+/* BEGIN SmartGravity HEADER */
+.sg-default-layout {
+  padding: 2.5rem 0.9375rem 3.5rem;
+}
+#error {
+  margin: 2.5rem auto 3.5rem;
+  max-width: 66rem;
+  text-align: center;
+}
+#header {
+  border-bottom: 1px solid;
+  #logo {
+    float: left;
+    padding: 0;
+    img {
+      float: left;
+      width: 48px;
+      height: 100%;
+    }
+  }
+  #sg-header-title h3 {
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin: 6px;
+    padding: 0;
+    float: left;
+  }
+}
+.sg-header {
+  padding-top: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+/* END SmartGravity HEADER */
+
+/* BEGIN SmartGravity BACKGROUNDS */
+.sg-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sg-background-fixed {
+  background-attachment: fixed;
+}
+/* END SmartGravity BACKGROUNDS */
+
+/* BEGIN SmartGravity Mainmenu Navigation */
+#sg-mainmenu {
+  float: right;
+  margin-top: 0.6rem;
+  .menu > li > a {
+    padding: .4rem 0.8rem;
+    border: 1px solid;
+    border-radius: $global-radius;
+    margin-left: 0.55rem;
+    > i {
+      margin: 0 0.25rem 0 0.4rem;
+    }
+  }
+  .menu.submenu > li > a {
+    margin-left: 0;
+    border: none;
+  }
+  .dropdown.menu {
+    .submenu {
+      border-radius: $global-radius;
+      &.first-sub {
+        left: 0.55rem;
+      }
+    }
+    .is-dropdown-submenu-parent {
+      &.is-down-arrow > a {
+        padding-right: 1.7rem;
+        &::after {
+          content: "\f078";
+          font: normal normal normal 14px/1 FontAwesome;
+          border: none;
+          width: auto;
+          height: auto;
+          top: 7px;
+          right: 7px;
+          margin-top: 0;
+          margin-left: 0;
+        }
+      }
+      &.opens-left .submenu {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+#sg-mainmenu-mobile .menu.nested {
+  margin-left: 0.75rem;
+  > li > a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    &::before {
+      content: "\f054";
+      font: normal normal normal 14px/1 FontAwesome;
+      border: none;
+      width: auto;
+      height: auto;
+      top: 7px;
+      left: 0;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+}
+.sg-header {
+  .mobile-nav-toggle {
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0.7rem 0;
+  }
+}
+/* END SmartGravity Mainmenu Navigation */
+
+/* BEGIN SmartGravity IN PAGE NAVIGATION */
+.top-bar#sg-in-page-navigation, .top-bar#sg-in-page-navigation ul {
+  display: inline-block;
+  padding: 0;
+}
+#sg-in-page-navigation {
+  width: 100%;
+  border-bottom: 1px solid;
+  .menu>li {
+    display: inline-block;
+  }
+}
+.sg-in-page-menu {
+  width: 100%;
+}
+@include breakpoint(small only) {
+  #sg-in-page-navigation .menu > li > a {
+    padding: 0.4rem 0.8rem;
+  }
+}
+/* END SmartGravit IN PAGE NAVIGATION */
+
+/* BEGIN TAXONOMY TAGS */
+.tags a {
+  border: 1px solid;
+  padding: 1px 6px;
+  border-radius: $global-radius;
+  font-size: 0.85rem;
+  margin: 0 2px;
+}
+/* END TAXONOMY TAGS */
+
+/* BEGIN BREADCRUMBS */
+.sg-breadcrumb {
+  border-bottom: 1px solid;
+}
+#body #breadcrumbs {
+  padding-left: 0;
+  span {
+    padding: 0 0.5rem;
+    &:first-child {
+      padding: 0 0.5rem;
+    }
+  }
+}
+#breadcrumbs span:first-child {
+  padding-left: 1rem;
+}
+/* END BREADCRUMBS */
+
+/* BEGIN SIMPLESEARCH */
+.simplesearch {
+  margin: 0 auto;
+  max-width: $global-width;
+  padding: 3rem 0.9375rem;
+}
+/* END SIMPLESEARCH */
+
+/* BEGIN SmartGravity MAIN CONTENT */
+.sg-content {
+  padding: 3rem 0.9375rem;
+  @include clearfix;
+}
+.sg-blog {
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+.blog-content-item {
+  margin: 2.5rem auto;
+}
+.list-item {
+  margin-bottom: 2.5rem;
+}
+.blog-header-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-content-item img, .list-item img {
+  margin: 1rem 0 1.5rem;
+}
+pre {
+  padding: 1rem 1.2rem 1.3rem;
+  border-width: 1px 1px 1px 10px;
+  border-style: solid;
+  border-radius: $global-radius;
+  margin: 1rem 0;
+  code {
+    font-weight: normal;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
+code {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: normal;
+  font-weight: normal;
+  padding: 0.1rem 0.4rem;
+  border-bottom: 1px dotted;
+  border-radius: $global-radius;
+}
+.sidebar-content {
+  margin-bottom: 0.9375rem;
+}
+/* END SmartGravity MAIN CONTENT */
+
+/* BEGIN SmartGravity GALLERY STYLES */
+.sg-gallery-row, .sg-columns-row {
+  margin: 0 -0.9375rem;
+}
+/* END SmartGravity GALLERY STYLES */
+
+.sg-column-block {
+  padding: 0.9375rem;
+  margin: 0 0 0.9375rem;
+  border-radius: $global-radius;
+}
+
+/* BEGIN SmartGravity FOOTER */
+#footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid;
+  img.logo {
+    width: 132px;
+    height: auto;
+  }
+}
+/* END SmartGravity FOOTER */
+
+/* BEGIN SmartGravity UTILITIES */
+.sg-center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+img.sg-align {
+  &-left, &-right, &-center {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  &-center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+/* from medium size up */
+@include breakpoint(medium) {
+  img.sg-align {
+    &-left {
+      float: left;
+      max-width: 50%;
+      margin-right: 1rem;
+    }
+    &-right {
+      float: right;
+      max-width: 50%;
+      margin-left: 1rem;
+    }
+  }
+}
+.hide-title {
+  h2.sg-title {
+    display: none;
+  }
+}
+.center-title {
+  h2.sg-title {
+    text-align: center;
+  }
+}
+.title-spacer {
+  &-small h2.sg-title {
+    padding: 0.5rem 0 1rem;
+  }
+  &-medium h2.sg-title {
+    padding: 1rem 0 2rem;
+  }
+  &-large h2.sg-title {
+    padding: 2rem 0 3rem;
+  }
+}
+.nomarginall {
+  margin: 0 !important;
+}
+.nomargintop {
+  margin-top: 0 !important;
+}
+.nomarginright {
+  margin-right: 0 !important;
+}
+.nomarginbottom {
+  margin-bottom: 0 !important;
+}
+.nomarginleft {
+  margin-left: 0 !important;
+}
+.nopaddingall {
+  padding: 0 !important;
+}
+.nopaddingtop {
+  padding-top: 0 !important;
+}
+.nopaddingright {
+  padding-right: 0 !important;
+}
+.nopaddingbottom {
+  padding-bottom: 0 !important;
+}
+.nopaddingleft {
+  padding-left: 0 !important;
+}
+/* small only covers small only */
+@include breakpoint(small only) {
+  .small-nomarginall {
+    margin: 0 !important;
+  }
+  .small-nomargintop {
+    margin-top: 0 !important;
+  }
+  .small-nomarginright {
+    margin-right: 0 !important;
+  }
+  .small-nomarginbottom {
+    margin-bottom: 0 !important;
+  }
+  .small-nomarginleft {
+    margin-left: 0 !important;
+  }
+  .small-nopaddingall {
+    padding: 0 !important;
+  }
+  .small-nopaddingtop {
+    padding-top: 0 !important;
+  }
+  .small-nopaddingright {
+    padding-right: 0 !important;
+  }
+  .small-nopaddingbottom {
+    padding-bottom: 0 !important;
+  }
+  .small-nopaddingleft {
+    padding-left: 0 !important;
+  }
+}
+/* medium covers medium size and up */
+@include breakpoint(medium) {
+  .medium-nomarginall {
+    margin: 0 !important;
+  }
+  .medium-nomargintop {
+    margin-top: 0 !important;
+  }
+  .medium-nomarginright {
+    margin-right: 0 !important;
+  }
+  .medium-nomarginbottom {
+    margin-bottom: 0 !important;
+  }
+  .medium-nomarginleft {
+    margin-left: 0 !important;
+  }
+  .medium-nopaddingall {
+    padding: 0 !important;
+  }
+  .medium-nopaddingtop {
+    padding-top: 0 !important;
+  }
+  .medium-nopaddingright {
+    padding-right: 0 !important;
+  }
+  .medium-nopaddingbottom {
+    padding-bottom: 0 !important;
+  }
+  .medium-nopaddingleft {
+    padding-left: 0 !important;
+  }
+}
+/* large covers large size and up */
+@include breakpoint(large) {
+  .large-nomarginall {
+    margin: 0 !important;
+  }
+  .large-nomargintop {
+    margin-top: 0 !important;
+  }
+  .large-nomarginright {
+    margin-right: 0 !important;
+  }
+  .large-nomarginbottom {
+    margin-bottom: 0 !important;
+  }
+  .large-nomarginleft {
+    margin-left: 0 !important;
+  }
+  .large-nopaddingall {
+    padding: 0 !important;
+  }
+  .large-nopaddingtop {
+    padding-top: 0 !important;
+  }
+  .large-nopaddingright {
+    padding-right: 0 !important;
+  }
+  .large-nopaddingbottom {
+    padding-bottom: 0 !important;
+  }
+  .large-nopaddingleft {
+    padding-left: 0 !important;
+  }
+}
+.sg-spacer-small .sg-content {
+  padding: 1rem 0.9375rem;
+  .off-canvas & {
+    padding: 1rem 0.9375rem;
+  }
+}
+.sg-spacer-medium .sg-content {
+  padding: 2rem 0.9375rem;
+  .off-canvas & {
+    padding: 2rem 0.9375rem;
+  }
+}
+.sg-spacer-large .sg-content {
+  padding: 5rem 0.9375rem;
+  .off-canvas & {
+    padding: 5rem 0.9375rem;
+  }
+}
+.sg-spacer-xlarge .sg-content {
+  padding: 7rem 0.9375rem;
+  .off-canvas & {
+    padding: 7rem 0.9375rem;
+  }
+}
+.sg-spacer-xxlarge .sg-content {
+  padding: 9rem 0.9375rem;
+  .off-canvas & {
+    padding: 9rem 0.9375rem;
+  }
+}
+/* END SmartGravity UTILITIES */
+
+/* BEGIN NESTED BLOCKQUOTES STYLE OVERRIDES */
+// NOTES
+blockquote {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1.1875rem;
+  border-width: 0 0 0 10px;
+  border-style: solid;
+  blockquote {
+    position: static;
+    display: block;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  cite {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+blockquote > blockquote > blockquote {
+  margin: 0;
+  p {
+    padding: 15px;
+    display: block;
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  > p {
+    // Yellow
+    margin-left: -5.45rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 10px;
+  }
+  > blockquote > p {
+    // Red
+    margin-left: -7.25rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 10px;
+  }
+  > blockquote > blockquote > p {
+    // Blue
+    margin-left: -9.05rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 10px;
+  }
+  > blockquote > blockquote > blockquote > p {
+    // Green
+    margin-left: -10.85rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 10px;
+  }
+}
+/* END NESTED BLOCKQUOTES STYLE OVERRIDES */

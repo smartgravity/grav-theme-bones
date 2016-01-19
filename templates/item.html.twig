@@ -1,0 +1,22 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% block content %}
+		{% if config.plugins.breadcrumbs.enabled %}
+			<div class="sg-breadcrumb">
+				<div class="row">
+					{% include 'partials/breadcrumbs.html.twig' %}
+				</div>
+			</div>
+		{% endif %}
+		
+		<div class="blog-content-item row">
+			<div id="item" class="medium-8 columns medium-nopaddingleft">
+			    {% include 'partials/blog_item.html.twig' with {'blog':page.parent, 'truncate':false} %}
+			</div>
+			<div id="sidebar" class="medium-4 columns medium-nopaddingright">
+				{% include 'partials/sidebar.html.twig' with {'blog':page.parent}%}
+			</div>
+		</div>
+	{% endblock %}
+
+{% endembed %}

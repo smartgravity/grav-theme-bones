@@ -1,0 +1,61 @@
+title: Gallery
+@extends: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/gallery
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/gallery
+                  @data-options: '\Grav\Common\Page\Pages::modularTypes'
+        styles:
+          type: tab
+          title: Row Style
+          fields:
+            header.styles:
+              type: textarea
+              label: CSS Classes
+            header.column_number:
+              type: select
+              label: Max number of columns
+              classes: fancy
+              default: 3
+              options:
+                '2': '2'
+                '3': '3'
+                '4': '4'
+                '5': '5'
+                '6': '6'
+                '7': '7'
+                '8': '8'
+
+        gallery:
+          type: tab
+          title: Images
+          fields:
+            header.gallery:
+              name: images
+              type: list
+              label: Images
+
+              fields:
+                .image:
+                  type: text
+                  label: Image
+                .title:
+                  type: text
+                  label: Title
+                .description:
+                  type: text
+                  label: Description

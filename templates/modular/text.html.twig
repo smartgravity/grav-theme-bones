@@ -1,0 +1,13 @@
+{% set css = page.header.styles %}
+<div class="modular-row{% if css %} {{ css }}{% endif %}">
+	<div class="row">
+		<div class="sg-content">
+			<h2 class="sg-title">{{ page.title }}</h2>
+	    {% set image = page.media.images|first %}
+	    {% if image %}
+	        {{ image.cropResize(960,960).html('','','sg-align-'~page.header.image_align) }}
+	    {% endif %}
+		{{ content }}
+		</div>
+	</div>
+</div>
