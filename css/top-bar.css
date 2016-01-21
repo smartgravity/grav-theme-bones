@@ -1,0 +1,53 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.top-bar {
+  padding: 0.5rem; }
+  .top-bar::before, .top-bar::after {
+    content: ' ';
+    display: table; }
+  .top-bar::after {
+    clear: both; }
+  .top-bar,
+  .top-bar ul {
+    background-color: #f6f6f6; }
+  .top-bar a {
+    color: #1E8CC7; }
+  .top-bar input {
+    width: 200px;
+    margin-right: 1rem; }
+  .top-bar input.button {
+    width: auto; }
+
+@media screen and (max-width: 39.9375em) {
+  .stacked-for-small .top-bar-right {
+    width: 100%; }
+  .stacked-for-small .top-bar-left {
+    width: 100%; } }
+
+@media screen and (max-width: 63.9375em) {
+  .stacked-for-medium .top-bar-right {
+    width: 100%; }
+  .stacked-for-medium .top-bar-left {
+    width: 100%; } }
+
+@media screen and (max-width: 74.9375em) {
+  .stacked-for-large .top-bar-right {
+    width: 100%; }
+  .stacked-for-large .top-bar-left {
+    width: 100%; } }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  .top-bar-right {
+    width: 100%; }
+
+  .top-bar-left {
+    width: 100%; } }
+.top-bar-left {
+  float: left; }
+
+.top-bar-right {
+  float: right; }
