@@ -1,0 +1,27 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.badge {
+  display: inline-block;
+  padding: 0.3em;
+  min-width: 2.1em;
+  font-size: 0.6rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #1E8CC7;
+  color: #fff; }
+  .badge.secondary {
+    background: #777;
+    color: #fff; }
+  .badge.success {
+    background: #3adb76;
+    color: #fff; }
+  .badge.alert {
+    background: #ec5840;
+    color: #fff; }
+  .badge.warning {
+    background: #ffae00;
+    color: #fff; }

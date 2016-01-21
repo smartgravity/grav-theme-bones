@@ -1,0 +1,118 @@
+{% block javascripts %}
+    {% do assets.addJs('theme://bower_components/what-input/what-input.js',{'priority':105, 'group':'bottom'}) %}
+    {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.core.js',{'priority':104, 'group':'bottom'}) %}
+    
+    {% if page.header.foundation_abide_js == "disabled" %}
+    {% elseif page.header.foundation_abide_js == "enabled" or theme_config.foundation_abide_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.abide.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_accoridion_js == "disabled" %}
+    {% elseif page.header.foundation_accoridion_js == "enabled" or theme_config.foundation_accoridion_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.accoridion.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_accordionMenu_js == "disabled" %}
+    {% elseif page.header.foundation_accordionMenu_js == "enabled" or theme_config.foundation_accordionMenu_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.accordionMenu.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_drilldown_js == "disabled" %}
+    {% elseif page.header.foundation_drilldown_js == "enabled" or theme_config.foundation_drilldown_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.drilldown.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_dropdown_js == "disabled" %}
+    {% elseif page.header.foundation_dropdown_js == "enabled" or theme_config.foundation_dropdown_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.dropdown.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_dropdownMenu_js == "disabled" %}
+    {% elseif page.header.foundation_dropdownMenu_js == "enabled" or theme_config.foundation_dropdownMenu_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.dropdownMenu.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_equalizer_js == "disabled" %}
+    {% elseif page.header.foundation_equalizer_js == "enabled" or theme_config.foundation_equalizer_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.equalizer.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_interchange_js == "disabled" %}
+    {% elseif page.header.foundation_interchange_js == "enabled" or theme_config.foundation_interchange_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.interchange.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_magellan_js == "disabled" %}
+    {% elseif page.header.foundation_magellan_js == "enabled" or theme_config.foundation_magellan_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.magellan.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_offcanvas_js == "disabled" %}
+    {% elseif page.header.foundation_offcanvas_js == "enabled" or theme_config.foundation_offcanvas_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.offcanvas.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_orbit_js == "disabled" %}
+    {% elseif page.header.foundation_orbit_js == "enabled" or theme_config.foundation_orbit_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.orbit.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_responsiveMenu_js == "disabled" %}
+    {% elseif page.header.foundation_responsiveMenu_js == "enabled" or theme_config.foundation_responsiveMenu_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.responsiveMenu.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_responsiveToggle_js == "disabled" %}
+    {% elseif page.header.foundation_responsiveToggle_js == "enabled" or theme_config.foundation_responsiveToggle_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.responsiveToggle.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_reveal_js == "disabled" %}
+    {% elseif page.header.foundation_reveal_js == "enabled" or theme_config.foundation_reveal_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.reveal.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_slider_js == "disabled" %}
+    {% elseif page.header.foundation_slider_js == "enabled" or theme_config.foundation_slider_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.slider.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_sticky_js == "disabled" %}
+    {% elseif page.header.foundation_sticky_js == "enabled" or theme_config.foundation_sticky_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.sticky.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_tabs_js == "disabled" %}
+    {% elseif page.header.foundation_tabs_js == "enabled" or theme_config.foundation_tabs_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.tabs.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_toggler_js == "disabled" %}
+    {% elseif page.header.foundation_toggler_js == "enabled" or theme_config.foundation_toggler_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.toggler.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_tooltip_js == "disabled" %}
+    {% elseif page.header.foundation_tooltip_js == "enabled" or theme_config.foundation_tooltip_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.tooltip.js',{'priority':103, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_box_js == "disabled" %}
+    {% elseif page.header.foundation_util_box_js == "enabled" or theme_config.foundation_util_box_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.box.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_keyboard_js == "disabled" %}
+    {% elseif page.header.foundation_util_keyboard_js == "enabled" or theme_config.foundation_util_keyboard_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.keyboard.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_mediaQuery_js == "disabled" %}
+    {% elseif page.header.foundation_util_mediaQuery_js == "enabled" or theme_config.foundation_util_mediaQuery_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.mediaQuery.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_motion_js == "disabled" %}
+    {% elseif page.header.foundation_util_motion_js == "enabled" or theme_config.foundation_util_motion_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.motion.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_nest_js == "disabled" %}
+    {% elseif page.header.foundation_nest_util_js == "enabled" or theme_config.foundation_util_nest_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.nest.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_timerAndImageLoader_js == "disabled" %}
+    {% elseif page.header.foundation_util_timerAndImageLoader_js == "enabled" or theme_config.foundation_util_timerAndImageLoader_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_touch_js == "disabled" %}
+    {% elseif page.header.foundation_util_touch_js == "enabled" or theme_config.foundation_util_touch_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.touch.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.foundation_util_triggers_js == "disabled" %}
+    {% elseif page.header.foundation_util_triggers_js == "enabled" or theme_config.foundation_util_triggers_js.enabled %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.triggers.js',{'priority':102, 'group':'bottom'}) %}
+    {% endif %}
+    {% if page.header.google_prettify == "disabled" %}
+    {% elseif page.header.google_prettify == "enabled" or theme_config.google_prettify.enabled %}
+        {% do assets.addJs('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js',{'priority':100, 'group':'bottom'}) %}
+    {% endif %}
+    {% do assets.addInlineJs('$(document).foundation();',{'priority':99, 'pipeline':false, 'group':'bottom'}) %}
+{% endblock %}

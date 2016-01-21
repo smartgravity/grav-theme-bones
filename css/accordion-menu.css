@@ -1,0 +1,24 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.is-accordion-submenu-parent > a {
+  position: relative; }
+  .is-accordion-submenu-parent > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    border-color: #1E8CC7 transparent transparent;
+    border-top-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 1rem; }
+
+.is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+  transform-origin: 50% 50%;
+  transform: scaleY(-1); }

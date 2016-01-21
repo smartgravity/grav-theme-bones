@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.accordion {
+  list-style-type: none;
+  background: #fff;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  margin-left: 0; }
+
+.accordion-title {
+  display: block;
+  padding: 1.25rem 1rem;
+  line-height: 1;
+  font-size: 0.75rem;
+  color: #1E8CC7;
+  position: relative;
+  border-bottom: 1px solid #f6f6f6; }
+  .accordion-title:hover, .accordion-title:focus {
+    background-color: #f6f6f6; }
+  :last-child > .accordion-title {
+    border-bottom-width: 0; }
+  .accordion-title::before {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -0.5rem; }
+  .is-active > .accordion-title::before {
+    content: '–'; }
+
+.accordion-content {
+  padding: 1rem;
+  display: none;
+  border-bottom: 1px solid #f6f6f6;
+  background-color: #fff; }
