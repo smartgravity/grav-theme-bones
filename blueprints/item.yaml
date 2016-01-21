@@ -108,6 +108,37 @@ form:
           title: Foundation
 
           fields:
+
+            css_files_title:
+              type: section
+              title: CSS
+              underline: true
+
+            header.fontawesome:
+                type: select
+                label: FontAwesome
+                size: small
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+
+            google_files_title:
+              type: section
+              title: Google Prettify
+              underline: true
+
+            header.google_prettify:
+                type: select
+                label: Google Prettify
+                size: small
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+
             js_files_title:
               type: section
               title: Javascript
@@ -116,6 +147,7 @@ form:
             header.foundation_abide_js:
                 type: select
                 label: abide
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -124,6 +156,7 @@ form:
             header.foundation_accordion_js:
                 type: select
                 label: accordion
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -132,6 +165,7 @@ form:
             header.foundation_accordionMenu_js:
                 type: select
                 label: accordionMenu
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -140,6 +174,7 @@ form:
             header.foundation_drilldown_js:
                 type: select
                 label: drilldown
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -148,6 +183,7 @@ form:
             header.foundation_dropdown_js:
                 type: select
                 label: dropdown
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -156,6 +192,7 @@ form:
             header.foundation_dropdownMenu_js:
                 type: select
                 label: dropdownMenu
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -164,6 +201,7 @@ form:
             header.foundation_equalizer_js:
                 type: select
                 label: equalizer
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -172,6 +210,7 @@ form:
             header.foundation_interchange_js:
                 type: select
                 label: interchange
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -180,6 +219,7 @@ form:
             header.foundation_magellan_js:
                 type: select
                 label: magellan
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -188,8 +228,8 @@ form:
             header.foundation_offcanvas_js:
                 type: select
                 label: offcanvas
-                highlight: 1
-                default: 1
+                size: small
+                default: use_global
                 options:
                   'use_global': 'Use Global'
                   'enabled': 'Enabled'
@@ -197,6 +237,7 @@ form:
             header.foundation_orbit_js:
                 type: select
                 label: orbit
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -205,6 +246,7 @@ form:
             header.foundation_responsiveMenu_js:
                 type: select
                 label: responsiveMenu
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -213,6 +255,7 @@ form:
             header.foundation_responsiveToggle_js:
                 type: select
                 label: responsiveToggle
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -221,6 +264,7 @@ form:
             header.foundation_reveal_js:
                 type: select
                 label: reveal
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -229,6 +273,7 @@ form:
             header.foundation_slider_js:
                 type: select
                 label: slider
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -237,6 +282,7 @@ form:
             header.foundation_sticky_js:
                 type: select
                 label: sticky
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -245,6 +291,7 @@ form:
             header.foundation_tabs_js:
                 type: select
                 label: tabs
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -253,6 +300,7 @@ form:
             header.foundation_toggler_js:
                 type: select
                 label: toggler
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -261,6 +309,7 @@ form:
             header.foundation_tooltip_js:
                 type: select
                 label: tooltip
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -275,6 +324,7 @@ form:
             header.foundation_util_box_js:
                 type: select
                 label: util box
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -283,6 +333,7 @@ form:
             header.foundation_util_keyboard_js:
                 type: select
                 label: util keyboard
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -291,8 +342,8 @@ form:
             header.foundation_util_mediaQuery_js:
                 type: select
                 label: util mediaQuery
-                highlight: 1
-                default: 1
+                size: small
+                default: use_global
                 options:
                   'use_global': 'Use Global'
                   'enabled': 'Enabled'
@@ -300,8 +351,8 @@ form:
             header.foundation_util_motion_js:
                 type: select
                 label: util motion
-                highlight: 1
-                default: 1
+                size: small
+                default: use_global
                 options:
                   'use_global': 'Use Global'
                   'enabled': 'Enabled'
@@ -309,6 +360,7 @@ form:
             header.foundation_util_nest_js:
                 type: select
                 label: util nest
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -317,6 +369,7 @@ form:
             header.foundation_util_timerAndImageLoader_js:
                 type: select
                 label: util timerAndImageLoader
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -325,6 +378,7 @@ form:
             header.foundation_util_touch_js:
                 type: select
                 label: util touch
+                size: small
                 default: use_global
                 options:
                   'use_global': 'Use Global'
@@ -333,8 +387,8 @@ form:
             header.foundation_util_triggers_js:
                 type: select
                 label: util triggers
-                highlight: 1
-                default: 1
+                size: small
+                default: use_global
                 options:
                   'use_global': 'Use Global'
                   'enabled': 'Enabled'
