@@ -1,3 +1,16 @@
+# v0.3.0
+## 1/23/2016
+
+1. [](#new)
+    * Improved Theme Info tab in Admin Plugin with images and columns
+2. [](#improved)
+    * Added "pagemediaselect" field to Gallery blueprint 
+    * Added sizes to modular blueprint fields
+    * Changed tab titles from Foundation to Assets
+3. [](#bugfix)
+    * Modular templates now ignore Assets features
+    * Added fallback for mobilemenu icon if FontAwesome is disabled
+
 # v0.2.0
 ## 1/20/2016
 
