@@ -26,12 +26,17 @@ form:
             header.styles:
               type: textarea
               label: CSS Classes
+              size: medium
             header.image_align:
               type: select
               label: Image position
+              size: small
               classes: fancy
               default: right
               options:
                 'center': 'Center'
                 'left': 'Left'
                 'right': 'Right'
+
+        assets:
+          type: ignore

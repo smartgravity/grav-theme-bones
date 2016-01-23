@@ -62,7 +62,15 @@
 	                {% include 'partials/navigation.html.twig' %}
 	                {% endblock %}
 	            </div>
-                <i class="mobile-nav-toggle fa fa-fw fa-bars float-right hide-for-{{ theme_config.mobilemenu_breakpoint }}" data-open="offCanvas"></i>
+                {% if page.header.fontawesome == "disabled" %}
+                    <button class="sg-mobilemenu-icon float-right hide-for-{{ theme_config.mobilemenu_breakpoint }}" data-open="offCanvas">[ menu ]</button>
+                {% elseif page.header.fontawesome == "enabled" %}
+                    <i class="mobile-nav-toggle fa fa-fw fa-bars float-right hide-for-{{ theme_config.mobilemenu_breakpoint }}" data-open="offCanvas"></i>
+                {% elseif theme_config.fontawesome.enabled %}
+                    <i class="mobile-nav-toggle fa fa-fw fa-bars float-right hide-for-{{ theme_config.mobilemenu_breakpoint }}" data-open="offCanvas"></i>
+                {% else %}
+                    <button class="sg-mobilemenu-icon float-right hide-for-{{ theme_config.mobilemenu_breakpoint }}" data-open="offCanvas">[ menu ]</button>
+                {% endif %}
             </div>
         </header>
         {% endblock %}

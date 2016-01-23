@@ -26,9 +26,11 @@ form:
             header.styles:
               type: textarea
               label: CSS Classes
+              size: medium
             header.column_number:
               type: select
               label: Max number of columns
+              size: x-small
               classes: fancy
               default: 3
               options:
@@ -51,11 +53,15 @@ form:
 
               fields:
                 .image:
-                  type: text
+                  type: pagemediaselect
                   label: Image
+                  help: Upload your images in the Content tab and hit save, then they will show up here.
                 .title:
                   type: text
                   label: Title
                 .description:
                   type: text
                   label: Description
+
+        assets:
+          type: ignore

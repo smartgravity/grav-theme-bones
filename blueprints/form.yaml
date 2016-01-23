@@ -8,9 +8,9 @@ form:
     tabs:
 
       fields:
-        foundation:
+        assets:
           type: tab
-          title: Foundation
+          title: Assets
 
           fields:
 
@@ -46,7 +46,7 @@ form:
 
             js_files_title:
               type: section
-              title: Javascript
+              title: Foundation Javascript
               underline: true
 
             header.foundation_abide_js:
@@ -223,7 +223,7 @@ form:
 
             js_utilities_title:
               type: section
-              title: Javascript Utilities
+              title: Foundation Javascript Utilities
               underline: true
 
             header.foundation_util_box_js:
