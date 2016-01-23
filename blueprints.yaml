@@ -18,7 +18,7 @@ form:
 
     tabs:
       type: tabs
-      active: 2
+      active: 1
       fields:
 
         general_info:
@@ -26,32 +26,55 @@ form:
           title: Info
           fields:
 
-            quick_links_title:
+            theme_info_title:
               type: section
-              title: Quick Links
+              title: Theme Summary
               underline: true
 
-            theme_info:
-              type: display
-              label: <a href="http://demos.smartgravity.com/grav-bones/" target="_blank">Grav Bones Demo <i class="fa fa-external-link"></i></a>
+              fields:
+                columns:
+                  type: columns
+                  fields:
+                    column1:
+                      type: column
+                      fields:
+
+                        theme_links:
+                          type: display
+                          label: <p style="padding-left:0;">The <strong>Bones</strong> theme is built on <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a> and meant to be customized. Easily toggle all javascript and stylesheets on and off so you can keep the page weight slim and still have all the resources you need. </p><p style="padding-left:0;"><a href="http://demos.smartgravity.com/grav-bones/" target="_blank">Grav Bones Demo <i class="fa fa-external-link"></i></a></p>
+
+                    column2:
+                      type: column
+                      fields:
+
+                        theme_info:
+                          type: display
+                          label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/bones-macbook-pro.png" alt="Bones Screenshot" /></p>
 
             foundation_info_title:
               type: section
               title: Zurb Foundation
               underline: true
 
-            foundation_docs_link:
-              type: display
-              label: <a href="http://foundation.zurb.com/sites/docs/" target="_blank">Foundation Docs <i class="fa fa-external-link"></i></a>
+              fields:
+                columns:
+                  type: columns
+                  fields:
+                    column1:
+                      type: column
+                      fields:
 
-            sass_info_title:
-              type: section
-              title: SASS
-              underline: true
+                        foundation_info:
+                          type: display
+                          label: <p style="padding-left:0;"><em>"Foundation is semantic, readable, flexible, and completely customizable. We’re constantly adding new resources and code snippets, including these handy HTML templates to help get you started!"</em></p><p style="padding-left:0;"><a href="http://foundation.zurb.com/" target="_blank">Foundation Homepage <i class="fa fa-external-link"></i></a><br /><a href="http://foundation.zurb.com/sites/docs/" target="_blank">Foundation Docs <i class="fa fa-external-link"></i></a></p>
 
-            sass_docs_link:
-              type: display
-              label: <a href="http://sass-lang.com/guide" target="_blank">Sass Basics <i class="fa fa-external-link"></i></a>
+                    column2:
+                      type: column
+                      fields:
+
+                        foundation_image:
+                          type: display
+                          label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/zurb-foundation-macbook.png" alt="Zurb Foundation" /></p>
 
         general_options:
           type: tab
