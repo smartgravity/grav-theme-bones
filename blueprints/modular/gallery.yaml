@@ -53,8 +53,9 @@ form:
 
               fields:
                 .image:
-                  type: text
+                  type: pagemediaselect
                   label: Image
+                  help: Upload your images in the Content tab and hit save, then they will show up here.
                 .title:
                   type: text
                   label: Title
