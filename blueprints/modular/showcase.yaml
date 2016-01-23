@@ -19,6 +19,7 @@ form:
                 header.template:
                   default: modular/showcase
                   @data-options: '\Grav\Common\Page\Pages::modularTypes'
+
         styles:
           type: tab
           title: Row Style
@@ -26,3 +27,7 @@ form:
             header.styles:
               type: textarea
               label: CSS Classes
+              size: medium
+
+        assets:
+          type: ignore

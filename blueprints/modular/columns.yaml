@@ -26,9 +26,11 @@ form:
             header.styles:
               type: textarea
               label: CSS Classes
+              size: medium
             header.column_number:
               type: select
               label: Max number of columns
+              size: x-small
               classes: fancy
               default: 3
               options:
@@ -39,3 +41,6 @@ form:
                 '6': '6'
                 '7': '7'
                 '8': '8'
+
+        assets:
+          type: ignore

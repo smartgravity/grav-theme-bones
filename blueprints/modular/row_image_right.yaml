@@ -26,3 +26,7 @@ form:
             header.styles:
               type: textarea
               label: CSS Classes
+              size: medium
+
+        assets:
+          type: ignore
