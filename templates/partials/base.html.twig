@@ -10,7 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png', true) }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
-    {% include 'partials/css.html.twig' %}
+    {% block stylesheets %}
+        {% include 'partials/css.html.twig' %}
+        {% if theme_config.css_bones.enabled %}
+            {% do assets.addCss('theme://css/bones.css',110) %}
+        {% endif %}
+        {% if theme_config.css_custom.enabled %}
+            {% do assets.addCss('theme://css/custom.css',10) %}
+        {% endif %}
+        {% if page.header.fontawesome == "disabled" %}
+        {% elseif page.header.fontawesome == "enabled" or theme_config.fontawesome.enabled %}
+            {% do assets.addCss('theme://css/font-awesome.min.css',115) %}
+        {% endif %}
+        {% if theme_config.google_fonts_logo.enabled %}
+            {% do assets.addCss('//fonts.googleapis.com/css?family=Special+Elite',105) %}
+        {% endif %}
+    {% endblock %}
     {{ assets.css() }}
     {% do assets.addJs('jquery',109) %}
     {{ assets.js() }}
@@ -93,7 +108,14 @@
         {% endblock %}
 
         {% block bottom %}
-            {% include 'partials/js.html.twig' %}
+            {% block javascripts %}
+                {% include 'partials/js.html.twig' %}
+                {% do assets.addJs('theme://bower_components/what-input/what-input.js',{'priority':105, 'group':'bottom'}) %}
+                {% if page.header.google_prettify == "disabled" %}
+                {% elseif page.header.google_prettify == "enabled" or theme_config.google_prettify.enabled %}
+                    {% do assets.addJs('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js',{'priority':100, 'group':'bottom'}) %}
+                {% endif %}
+            {% endblock %}
             {{ assets.js('bottom') }}
         {% endblock %}
         </div>

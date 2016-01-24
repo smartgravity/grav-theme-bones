@@ -122,6 +122,16 @@ ol {
   font-size: 2rem;
   margin: 0.7rem 0; }
 
+/* Mobilemenu Icon substitute when FontAwesome is disabled */
+.sg-mobilemenu-icon {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin: 6px;
+  padding: 0; }
+
 /* END SmartGravity Mainmenu Navigation */
 /* BEGIN SmartGravity IN PAGE NAVIGATION */
 .top-bar#sg-in-page-navigation, .top-bar#sg-in-page-navigation ul {
@@ -489,9 +499,9 @@ blockquote > blockquote > blockquote {
 #sg-mainmenu .menu > li.active > a, #sg-mainmenu-mobile .menu > li.active > a {
   background-color: #f6f6f6; }
 
-.mobile-nav-toggle {
+.mobile-nav-toggle, .sg-mobilemenu-icon {
   color: #1E8CC7; }
-  .mobile-nav-toggle:hover {
+  .mobile-nav-toggle:hover, .sg-mobilemenu-icon:hover {
     color: #54b3e5; }
 
 /* END SmartGravity Mainmenu Navigation */
