@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/bones-macbook-pro.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44925,
+		"inputAbbreviatedPath": "\/bones-macbook-pro.png",
+		"outputAbbreviatedPath": "\/bones-macbook-pro.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/bones.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4414,6 +4425,17 @@
 		"initialSize": 19447,
 		"inputAbbreviatedPath": "\/thumbnail.jpg",
 		"outputAbbreviatedPath": "\/thumbnail.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/zurb-foundation-macbook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35338,
+		"inputAbbreviatedPath": "\/zurb-foundation-macbook.png",
+		"outputAbbreviatedPath": "\/zurb-foundation-macbook.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

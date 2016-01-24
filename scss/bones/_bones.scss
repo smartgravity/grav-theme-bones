@@ -121,6 +121,16 @@
     margin: 0.7rem 0;
   }
 }
+/* Mobilemenu Icon substitute when FontAwesome is disabled */
+.sg-mobilemenu-icon {
+  font-family: $body-font-family;
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin: 6px;
+  padding: 0;
+}
 /* END SmartGravity Mainmenu Navigation */
 
 /* BEGIN SmartGravity IN PAGE NAVIGATION */

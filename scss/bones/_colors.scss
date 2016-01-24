@@ -28,7 +28,7 @@
     }
   }
 }
-.mobile-nav-toggle {
+.mobile-nav-toggle, .sg-mobilemenu-icon {
   color: $primary-color;
   &:hover {
     color: scale-color($primary-color, $lightness: 30%);
