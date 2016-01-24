@@ -1,3 +1,12 @@
+# v0.3.1
+## 1/24/2016
+
+1. [](#improved)
+    * Better separated JS and CSS Assets
+2. [](#bugfix)
+    * Removed unnecessary Foundation index.html file
+    * Fixed fallback styling for non-fontawesome mobilemenu icon
+
 # v0.3.0
 ## 1/23/2016
 
