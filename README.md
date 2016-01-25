@@ -1,9 +1,9 @@
 # Bones - Grav Theme
 
+**Foundation: v6.1.1** | **FontAwesome: v4.5.0**
+
 **Bones** is a [Grav](http://getgrav.org) theme based on [Foundation6](http://foundation.zurb.com/) by Zurb and Includes [FontAwesome](https://fortawesome.github.io/Font-Awesome/). This is a base theme meant to be customized. The idea is to provide a starting point for your next custom project.
 
-**Foundation: v6.1.1**  
-**FontAwesome: v4.5.0**
 
 ![Bones Screenshot](assets/bones-macbook-pro.png)
 
