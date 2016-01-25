@@ -5,7 +5,7 @@
 **Foundation: v6.1.1**  
 **FontAwesome: v4.5.0**
 
-![Bones Screenshot](bones-macbook-pro.png)
+![Bones Screenshot](assets/bones-macbook-pro.png)
 
 
 # Installation
