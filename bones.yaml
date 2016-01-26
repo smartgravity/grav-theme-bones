@@ -48,10 +48,3 @@ css_sticky:
   enabled: true
 css_table:
   enabled: true
-
-streams:
-  schemes:
-    theme:
-      type: ReadOnlyStream
-      paths:
-        - user/themes/bones
