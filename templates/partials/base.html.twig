@@ -41,6 +41,10 @@
                     {% if content %}
                         {{ content }}
                     {% endif %}
+                    {% if config.plugins.langswitcher.enabled %}
+                    <br />
+                    {% include 'partials/langswitcher.html.twig' %}
+                    {% endif %}
                 </div>
             </div>
             <div id="mobile-navigation">
@@ -55,14 +59,14 @@
         <header id="header">
 
         	<div class="row sg-header">
-	            <div id="logo">
-	                <a href="{{ base_url == '' ? '/' : base_url }}">
-						{% set image = pages.find('/logo').media.images|first %}
-						{% if image %}
-						    {{ image.cropResize(96,96).html }}
-						{% endif %}
-	                </a>
-	            </div>
+                {% set image = pages.find('/logo').media.images|first %}
+                {% if image %}
+                <div id="logo">
+                    <a href="{{ base_url == '' ? '/' : base_url }}">
+                        {{ image.cropResize(96,96).html }}
+                    </a>
+                </div>
+                {% endif %}
 	            <div id="sg-header-title">
 	                <a href="{{ base_url == '' ? '/' : base_url }}">
 	                    <h3{% if theme_config.google_fonts_logo.enabled %} style="font-family: 'Special Elite', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;"{% endif %}>{{ config.site.title }}</h3>
@@ -97,14 +101,14 @@
         {% endblock %}
 
         {% block footer %}
+        {% set content = pages.find('/footer').content %}
+        {% if content %}
         <footer id="footer">
             <div class="row sg-center">
-    			{% set content = pages.find('/footer').content %}
-    			{% if content %}
-    			    {{ content }}
-    			{% endif %}
+                 {{ content }}
             </div>
         </footer>
+        {% endif %}
         {% endblock %}
 
         {% block bottom %}
