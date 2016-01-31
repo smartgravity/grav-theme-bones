@@ -1,7 +1,7 @@
 # Bones - Grav Theme
 
-[![Foundation Version](https://img.shields.io/badge/Foundation-v6.1.1-orange.svg)]() 
-[![FontAwesome Version](https://img.shields.io/badge/FontAwesome-v4.5.0-blue.svg)]() 
+[![Foundation Version](https://img.shields.io/badge/Foundation-v6.1.1-orange.svg)] 
+[![FontAwesome Version](https://img.shields.io/badge/FontAwesome-v4.5.0-blue.svg)] 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](http://sgne.ws/1KPEcMD)
 
 **Bones** is a [Grav](http://getgrav.org) theme based on [Foundation6](http://foundation.zurb.com/) by Zurb and Includes [FontAwesome](https://fortawesome.github.io/Font-Awesome/). This is a base theme meant to be customized. The idea is to provide a starting point for your next custom project.
