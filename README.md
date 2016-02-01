@@ -1,6 +1,6 @@
 # Bones - Grav Theme
 
-[![Foundation Version](https://img.shields.io/badge/Foundation-v6.1.1-orange.svg)](http://foundation.zurb.com/) 
+[![Foundation Version](https://img.shields.io/badge/Foundation-v6.1.2-orange.svg)](http://foundation.zurb.com/) 
 [![FontAwesome Version](https://img.shields.io/badge/FontAwesome-v4.5.0-blue.svg)](https://fortawesome.github.io/Font-Awesome/) 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](http://sgne.ws/1KPEcMD)
 
