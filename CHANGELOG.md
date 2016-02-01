@@ -1,3 +1,15 @@
+# v0.4.0
+## 2/1/2016
+
+1. [](#improved)
+    * Updated to Foundation v6.1.2
+    * Fixed content and logo alignment for default template layouts
+2. [](#bugfix)
+    * Added custom.scss file so Custom CSS option will work
+    * Removed composer.json file as it is not needed anymore
+    * Removed unneeded streams from Theme YAML
+    * Removed unnecessary Foundation "index.html" file
+
 # v0.3.1
 ## 1/24/2016
 
