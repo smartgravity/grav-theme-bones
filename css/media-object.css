@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -22,7 +22,7 @@
   vertical-align: top; }
   .media-object-section:first-child {
     padding-right: 1rem; }
-  .media-object-section:last-child:not(+ .media-object-section:first-child) {
+  .media-object-section:last-child:not(:nth-child(2)) {
     padding-left: 1rem; }
   .media-object-section.middle {
     vertical-align: middle; }

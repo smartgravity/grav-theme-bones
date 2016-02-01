@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -28,6 +28,9 @@
       margin-right: 0; }
   .row.expanded {
     max-width: none; }
+    .row.expanded .row {
+      margin-left: auto;
+      margin-right: auto; }
 
 .column, .columns {
   padding-left: 0.625rem;
@@ -294,6 +297,9 @@
 .small-collapse > .column, .small-collapse > .columns {
   padding-left: 0;
   padding-right: 0; }
+.small-collapse .row {
+  margin-left: 0;
+  margin-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
   padding-left: 0.625rem;
@@ -309,7 +315,8 @@
 .small-pull-0 {
   position: static;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  float: left; }
 
 @media screen and (min-width: 40em) {
   .medium-1 {
@@ -555,6 +562,9 @@
   .medium-collapse > .column, .medium-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
+  .medium-collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
 
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
     padding-left: 0.9375rem;
@@ -570,7 +580,8 @@
   .medium-pull-0 {
     position: static;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0;
+    float: left; } }
 @media screen and (min-width: 64em) {
   .large-1 {
     width: 8.3333333333%; }
@@ -815,6 +826,9 @@
   .large-collapse > .column, .large-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
+  .large-collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
 
   .large-uncollapse > .column, .large-uncollapse > .columns {
     padding-left: 0.9375rem;
@@ -830,4 +844,5 @@
   .large-pull-0 {
     position: static;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0;
+    float: left; } }

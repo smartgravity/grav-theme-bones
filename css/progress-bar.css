@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -27,13 +27,16 @@
   height: 100%;
   background-color: #1E8CC7;
   border-radius: 3px; }
-  .progress-meter .progress-meter-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #fff;
-    white-space: nowrap; }
+
+.progress-meter-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 3px; }

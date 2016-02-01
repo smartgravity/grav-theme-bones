@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -29,6 +29,7 @@
     border: inset 0.75rem;
     border-color: transparent transparent #1F1D0F;
     border-bottom-style: solid;
+    border-top-width: 0;
     bottom: 100%;
     position: absolute;
     left: 50%;
@@ -41,6 +42,7 @@
     border: inset 0.75rem;
     border-color: #1F1D0F transparent transparent;
     border-top-style: solid;
+    border-bottom-width: 0;
     top: 100%;
     bottom: auto; }
   .tooltip.left::before {
@@ -51,6 +53,7 @@
     border: inset 0.75rem;
     border-color: transparent transparent transparent #1F1D0F;
     border-left-style: solid;
+    border-right-width: 0;
     bottom: auto;
     left: 100%;
     top: 50%;
@@ -63,6 +66,7 @@
     border: inset 0.75rem;
     border-color: transparent #1F1D0F transparent transparent;
     border-right-style: solid;
+    border-left-width: 0;
     bottom: auto;
     left: auto;
     right: 100%;

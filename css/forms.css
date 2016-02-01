@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -108,7 +108,8 @@ label {
   padding: 0 1rem;
   background: #f6f6f6;
   color: #1F1D0F;
-  border: 1px solid #cacaca; }
+  border: 1px solid #cacaca;
+  white-space: nowrap; }
   .input-group-label:first-child {
     border-right: 0; }
   .input-group-label:last-child {
@@ -135,7 +136,8 @@ fieldset {
   margin: 0; }
 
 legend {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  max-width: 100%; }
 
 .fieldset {
   border: 1px solid #cacaca;
@@ -162,7 +164,8 @@ select {
   -moz-appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%2851, 51, 51%29"></polygon></svg>');
   background-size: 9px 6px;
-  background-position: right 0.5rem center;
+  background-position: right center;
+  background-origin: content-box;
   background-repeat: no-repeat; }
   @media screen and (min-width: 0\0) {
     select {

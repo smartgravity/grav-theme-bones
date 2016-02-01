@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -16,8 +16,8 @@
   .pagination li {
     font-size: 0.875rem;
     margin-right: 0.0625rem;
-    display: none;
-    border-radius: 3px; }
+    border-radius: 3px;
+    display: none; }
     .pagination li:last-child, .pagination li:first-child {
       display: inline-block; }
     @media screen and (min-width: 40em) {

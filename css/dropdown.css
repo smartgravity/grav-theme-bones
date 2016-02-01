@@ -1,19 +1,20 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .dropdown-pane {
   background-color: #fff;
   border: 1px solid #cacaca;
+  border-radius: 3px;
   display: block;
+  font-size: 1rem;
   padding: 1rem;
   position: absolute;
   visibility: hidden;
   width: 300px;
-  z-index: 10;
-  border-radius: 3px; }
+  z-index: 10; }
   .dropdown-pane.is-open {
     visibility: visible; }
 

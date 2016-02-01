@@ -77,7 +77,6 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 3px; //--custom--
 $global-text-direction: ltr;
-// $rem-base: 16px; //--might be deprecated
 
 // 2. Breakpoints
 // --------------
@@ -299,7 +298,7 @@ $drilldown-background: $white;
 
 $dropdown-padding: 1rem;
 $dropdown-border: 1px solid $medium-gray;
-$dropdown-font-size: 16rem;
+$dropdown-font-size: 1rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
@@ -540,6 +539,8 @@ $titlebar-icon-spacing: 0.25rem;
 // 34. Tooltip
 // -----------
 
+$has-tip-font-weight: $global-weight-bold;
+$has-tip-border-bottom: dotted 1px $dark-gray;
 $tooltip-background-color: $black;
 $tooltip-color: $white;
 $tooltip-padding: 0.75rem;
@@ -554,7 +555,8 @@ $tooltip-radius: $global-radius;
 
 $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
-$topbar-link-color: $primary-color;
+$topbar-title-spacing: 1rem;
+$topbar-link-color: $primary-color; //--custom--
 $topbar-input-width: 200px;
 
 // 36. Blockquotes CUSTOM SECTION

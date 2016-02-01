@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -9,6 +9,7 @@
   list-style-type: none;
   background: #fff;
   border: 1px solid #f6f6f6;
+  border-bottom: 0;
   border-radius: 3px;
   margin-left: 0; }
 
@@ -22,8 +23,6 @@
   border-bottom: 1px solid #f6f6f6; }
   .accordion-title:hover, .accordion-title:focus {
     background-color: #f6f6f6; }
-  :last-child > .accordion-title {
-    border-bottom-width: 0; }
   .accordion-title::before {
     content: '+';
     position: absolute;

@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -44,8 +44,6 @@ body {
   background: rgba(255, 255, 255, 0.25);
   cursor: pointer;
   transition: background 0.5s ease; }
-  .is-off-canvas-open .js-off-canvas-exit {
-    display: block; }
 
 .off-canvas {
   position: absolute;

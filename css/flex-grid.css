@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -10,11 +10,11 @@
   margin-right: auto;
   display: flex;
   flex-flow: row wrap; }
-  .row .row, .column-row .row {
+  .row .row {
     margin-left: -0.625rem;
     margin-right: -0.625rem; }
     @media screen and (min-width: 40em) {
-      .row .row, .column-row .row {
+      .row .row {
         margin-left: -0.9375rem;
         margin-right: -0.9375rem; } }
   .row.expanded {
@@ -31,6 +31,14 @@
     .column, .columns {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
+
+.column.row.row, .row.row.columns {
+  float: none; }
+  .row .column.row.row, .row .row.row.columns {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; }
 
 .small-1 {
   flex: 0 0 8.3333333333%;
@@ -139,8 +147,8 @@
   padding-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem; }
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
 
 @media screen and (min-width: 40em) {
   .medium-1 {
@@ -379,7 +387,8 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; } }
 .shrink {
-  flex: 0 0 auto; }
+  flex: 0 0 auto;
+  max-width: 100%; }
 
 .row.align-right {
   justify-content: flex-end; }
