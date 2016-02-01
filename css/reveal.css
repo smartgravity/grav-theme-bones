@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -23,7 +23,7 @@ body.is-reveal-open {
   z-index: 1006;
   padding: 1rem;
   border: 1px solid #cacaca;
-  margin: 100px auto 0;
+  margin: 6.25rem auto 0;
   background-color: #fff;
   border-radius: 3px;
   position: absolute;
@@ -42,13 +42,13 @@ body.is-reveal-open {
     .reveal {
       width: 600px;
       max-width: 66rem; } }
-  .reveal.collapse {
-    padding: 0; }
   @media screen and (min-width: 40em) {
     .reveal .reveal {
       left: auto;
       right: auto;
       margin: 0 auto; } }
+  .reveal.collapse {
+    padding: 0; }
   @media screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;

@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -34,12 +34,13 @@
     border: inset 6px;
     border-color: transparent transparent transparent #1E8CC7;
     border-left-style: solid;
+    border-right-width: 0;
     position: absolute;
     top: 50%;
     margin-top: -6px;
     right: 1rem; }
 
-.js-drilldown-back::before {
+.js-drilldown-back > a::before {
   content: '';
   display: block;
   width: 0;
@@ -47,7 +48,8 @@
   border: inset 6px;
   border-color: transparent #1E8CC7 transparent transparent;
   border-right-style: solid;
-  float: left;
-  margin-right: 0.75rem;
-  margin-left: 0.6rem;
-  margin-top: 14px; }
+  border-left-width: 0;
+  border-left-width: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.75rem; }

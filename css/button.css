@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.1
+ * Version 6.1.2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -115,6 +115,7 @@
     border: inset 0.4em;
     border-color: #fff transparent transparent;
     border-top-style: solid;
+    border-bottom-width: 0;
     position: relative;
     top: 0.4em;
     float: right;
