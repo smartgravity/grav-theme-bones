@@ -1,3 +1,9 @@
+# v0.4.1
+## 2/2/2016
+
+1. [](#bugfix)
+    * Updated Magellan and Sticky JS files to fix Firefox issue
+
 # v0.4.0
 ## 2/1/2016
 
