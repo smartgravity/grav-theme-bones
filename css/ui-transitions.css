@@ -1,8 +1,6 @@
-.slide-in-down.mui-enter, .slide-in-left.mui-enter, .slide-in-up.mui-enter, .slide-in-right.mui-enter, .slide-out-down.mui-leave, .slide-out-right.mui-leave, .slide-out-up.mui-leave, .slide-out-left.mui-leave, .fade-in.mui-enter, .fade-out.mui-leave, .hinge-in-from-top.mui-enter, .hinge-in-from-right.mui-enter, .hinge-in-from-bottom.mui-enter, .hinge-in-from-left.mui-enter, .hinge-in-from-middle-x.mui-enter, .hinge-in-from-middle-y.mui-enter, .hinge-out-from-top.mui-leave, .hinge-out-from-right.mui-leave, .hinge-out-from-bottom.mui-leave, .hinge-out-from-left.mui-leave, .hinge-out-from-middle-x.mui-leave, .hinge-out-from-middle-y.mui-leave, .scale-in-up.mui-enter, .scale-in-down.mui-enter, .scale-out-up.mui-leave, .scale-out-down.mui-leave, .spin-in.mui-enter, .spin-out.mui-leave, .spin-in-ccw.mui-enter, .spin-out-ccw.mui-leave {
-  transition-duration: 500ms;
-  transition-timing-function: linear; }
-
 .slide-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(-100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -10,6 +8,8 @@
   transform: translateY(0); }
 
 .slide-in-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(-100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -17,6 +17,8 @@
   transform: translateX(0); }
 
 .slide-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -24,6 +26,8 @@
   transform: translateY(0); }
 
 .slide-in-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -31,6 +35,8 @@
   transform: translateX(0); }
 
 .slide-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -38,6 +44,8 @@
   transform: translateY(100%); }
 
 .slide-out-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -45,6 +53,8 @@
   transform: translateX(100%); }
 
 .slide-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -52,6 +62,8 @@
   transform: translateY(-100%); }
 
 .slide-out-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -59,18 +71,24 @@
   transform: translateX(-100%); }
 
 .fade-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 0;
   transition-property: opacity; }
 .fade-in.mui-enter.mui-enter-active {
   opacity: 1; }
 
 .fade-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 1;
   transition-property: opacity; }
 .fade-out.mui-leave.mui-leave-active {
   opacity: 0; }
 
 .hinge-in-from-top.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateX(-90deg);
   transform-origin: top;
   transition-property: transform, opacity;
@@ -80,6 +98,8 @@
   opacity: 1; }
 
 .hinge-in-from-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateY(-90deg);
   transform-origin: right;
   transition-property: transform, opacity;
@@ -89,6 +109,8 @@
   opacity: 1; }
 
 .hinge-in-from-bottom.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateX(90deg);
   transform-origin: bottom;
   transition-property: transform, opacity;
@@ -98,6 +120,8 @@
   opacity: 1; }
 
 .hinge-in-from-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateY(90deg);
   transform-origin: left;
   transition-property: transform, opacity;
@@ -107,6 +131,8 @@
   opacity: 1; }
 
 .hinge-in-from-middle-x.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateX(-90deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -116,6 +142,8 @@
   opacity: 1; }
 
 .hinge-in-from-middle-y.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateY(-90deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -125,6 +153,8 @@
   opacity: 1; }
 
 .hinge-out-from-top.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: top;
   transition-property: transform, opacity;
@@ -134,6 +164,8 @@
   opacity: 0; }
 
 .hinge-out-from-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: right;
   transition-property: transform, opacity;
@@ -143,6 +175,8 @@
   opacity: 0; }
 
 .hinge-out-from-bottom.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: bottom;
   transition-property: transform, opacity;
@@ -152,6 +186,8 @@
   opacity: 0; }
 
 .hinge-out-from-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: left;
   transition-property: transform, opacity;
@@ -161,6 +197,8 @@
   opacity: 0; }
 
 .hinge-out-from-middle-x.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -170,6 +208,8 @@
   opacity: 0; }
 
 .hinge-out-from-middle-y.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -179,6 +219,8 @@
   opacity: 0; }
 
 .scale-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(0.5);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -187,6 +229,8 @@
   opacity: 1; }
 
 .scale-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(1.5);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -195,6 +239,8 @@
   opacity: 1; }
 
 .scale-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(1);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -203,6 +249,8 @@
   opacity: 0; }
 
 .scale-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(1);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -211,6 +259,8 @@
   opacity: 0; }
 
 .spin-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(-0.75turn);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -219,6 +269,8 @@
   opacity: 1; }
 
 .spin-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(0);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -227,6 +279,8 @@
   opacity: 0; }
 
 .spin-in-ccw.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(0.75turn);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -235,6 +289,8 @@
   opacity: 1; }
 
 .spin-out-ccw.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(0);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -308,6 +364,12 @@
     transform: rotate(-7deg); }
   0%, 30%, 70%, 100% {
     transform: rotate(0); } }
+.shake,
+.spin-cw,
+.spin-ccw,
+.wiggle {
+  animation-duration: 500ms; }
+
 .infinite {
   animation-iteration-count: infinite; }
 
@@ -348,6 +410,8 @@
   animation-delay: 700ms !important; }
 
 .slide-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(-100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -355,6 +419,8 @@
   transform: translateY(0); }
 
 .slide-in-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(-100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -362,6 +428,8 @@
   transform: translateX(0); }
 
 .slide-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -369,6 +437,8 @@
   transform: translateY(0); }
 
 .slide-in-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -376,6 +446,8 @@
   transform: translateX(0); }
 
 .slide-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -383,6 +455,8 @@
   transform: translateY(100%); }
 
 .slide-out-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -390,6 +464,8 @@
   transform: translateX(100%); }
 
 .slide-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateY(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -397,6 +473,8 @@
   transform: translateY(-100%); }
 
 .slide-out-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: translateX(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
@@ -404,18 +482,24 @@
   transform: translateX(-100%); }
 
 .fade-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 0;
   transition-property: opacity; }
 .fade-in.mui-enter.mui-enter-active {
   opacity: 1; }
 
 .fade-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 1;
   transition-property: opacity; }
 .fade-out.mui-leave.mui-leave-active {
   opacity: 0; }
 
 .hinge-in-from-top.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateX(-90deg);
   transform-origin: top;
   transition-property: transform, opacity;
@@ -425,6 +509,8 @@
   opacity: 1; }
 
 .hinge-in-from-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateY(-90deg);
   transform-origin: right;
   transition-property: transform, opacity;
@@ -434,6 +520,8 @@
   opacity: 1; }
 
 .hinge-in-from-bottom.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateX(90deg);
   transform-origin: bottom;
   transition-property: transform, opacity;
@@ -443,6 +531,8 @@
   opacity: 1; }
 
 .hinge-in-from-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateY(90deg);
   transform-origin: left;
   transition-property: transform, opacity;
@@ -452,6 +542,8 @@
   opacity: 1; }
 
 .hinge-in-from-middle-x.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateX(-90deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -461,6 +553,8 @@
   opacity: 1; }
 
 .hinge-in-from-middle-y.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotateY(-90deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -470,6 +564,8 @@
   opacity: 1; }
 
 .hinge-out-from-top.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: top;
   transition-property: transform, opacity;
@@ -479,6 +575,8 @@
   opacity: 0; }
 
 .hinge-out-from-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: right;
   transition-property: transform, opacity;
@@ -488,6 +586,8 @@
   opacity: 0; }
 
 .hinge-out-from-bottom.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: bottom;
   transition-property: transform, opacity;
@@ -497,6 +597,8 @@
   opacity: 0; }
 
 .hinge-out-from-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: left;
   transition-property: transform, opacity;
@@ -506,6 +608,8 @@
   opacity: 0; }
 
 .hinge-out-from-middle-x.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -515,6 +619,8 @@
   opacity: 0; }
 
 .hinge-out-from-middle-y.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: perspective(2000px) rotate(0deg);
   transform-origin: center;
   transition-property: transform, opacity;
@@ -524,6 +630,8 @@
   opacity: 0; }
 
 .scale-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(0.5);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -532,6 +640,8 @@
   opacity: 1; }
 
 .scale-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(1.5);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -540,6 +650,8 @@
   opacity: 1; }
 
 .scale-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(1);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -548,6 +660,8 @@
   opacity: 0; }
 
 .scale-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: scale(1);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -556,6 +670,8 @@
   opacity: 0; }
 
 .spin-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(-0.75turn);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -564,6 +680,8 @@
   opacity: 1; }
 
 .spin-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(0);
   transition-property: transform, opacity;
   opacity: 1; }
@@ -572,6 +690,8 @@
   opacity: 0; }
 
 .spin-in-ccw.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(0.75turn);
   transition-property: transform, opacity;
   opacity: 0; }
@@ -580,6 +700,8 @@
   opacity: 1; }
 
 .spin-out-ccw.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   transform: rotate(0);
   transition-property: transform, opacity;
   opacity: 1; }
