@@ -108,3 +108,6 @@
 {% if theme_config.css_ui_transitions.enabled %}
     {% do assets.addCss('theme://css/ui-transitions.css',115) %}
 {% endif %}
+{% if theme_config.css_ui_animations.enabled %}
+    {% do assets.addCss('theme://css/ui-animations.css',115) %}
+{% endif %}
