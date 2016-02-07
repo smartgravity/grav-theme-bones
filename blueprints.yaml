@@ -49,7 +49,7 @@ form:
 
                         theme_info:
                           type: display
-                          label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/bones-macbook-pro.png" alt="Bones Screenshot" /></p>
+                          label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/bones-macbook-pro.png" alt="Bones Screenshot" style="width:100%;" /></p>
 
             foundation_info_title:
               type: section
@@ -74,7 +74,7 @@ form:
 
                         foundation_image:
                           type: display
-                          label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/zurb-foundation-macbook.png" alt="Zurb Foundation" /></p>
+                          label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/zurb-foundation-macbook.png" alt="Zurb Foundation" style="width:100%;" /></p>
 
         general_options:
           type: tab
@@ -83,12 +83,12 @@ form:
 
             general_options_title:
               type: section
-              title: General Options
+              title: Features
               underline: true
 
-            fontawesome.enabled:
+            site_title.enabled:
                 type: toggle
-                label: FontAwesome
+                label: Site Title in Logo
                 highlight: 1
                 default: 1
                 options:
@@ -99,6 +99,36 @@ form:
             google_fonts_logo.enabled:
                 type: toggle
                 label: Google Fonts for Logo
+                highlight: 1
+                default: 1
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
+            fontawesome.enabled:
+                type: toggle
+                label: FontAwesome
+                highlight: 1
+                default: 1
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
+            animate_css.enabled:
+                type: toggle
+                label: Animate CSS
+                highlight: 1
+                default: 1
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
+            wow_js.enabled:
+                type: toggle
+                label: WOW js
                 highlight: 1
                 default: 1
                 options:

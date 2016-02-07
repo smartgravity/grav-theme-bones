@@ -18,12 +18,16 @@
         {% if theme_config.css_custom.enabled %}
             {% do assets.addCss('theme://css/custom.css',10) %}
         {% endif %}
+        {% if page.header.animate_css == "disabled" %}
+        {% elseif page.header.animate_css == "enabled" or theme_config.animate_css.enabled %}
+            {% do assets.addCss('theme://css/animate.css',115) %}
+        {% endif %}
         {% if page.header.fontawesome == "disabled" %}
         {% elseif page.header.fontawesome == "enabled" or theme_config.fontawesome.enabled %}
             {% do assets.addCss('theme://css/font-awesome.min.css',115) %}
         {% endif %}
-        {% if theme_config.google_fonts_logo.enabled %}
-            {% do assets.addCss('//fonts.googleapis.com/css?family=Special+Elite',105) %}
+        {% if theme_config.site_title.enabled and theme_config.google_fonts_logo.enabled %}
+            <link href="//fonts.googleapis.com/css?family=Special+Elite&text={{ site.title|e }}" type="text/css" rel="stylesheet" />
         {% endif %}
     {% endblock %}
     {{ assets.css() }}
@@ -67,11 +71,13 @@
                     </a>
                 </div>
                 {% endif %}
+                {% if theme_config.site_title.enabled %}
 	            <div id="sg-header-title">
 	                <a href="{{ base_url == '' ? '/' : base_url }}">
 	                    <h3{% if theme_config.google_fonts_logo.enabled %} style="font-family: 'Special Elite', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;"{% endif %}>{{ config.site.title }}</h3>
 	                </a>
 	            </div>
+                {% endif %}
 	            <div id="navigation" class="{% if theme_config.mobilemenu_breakpoint == 'all' %}hide{% else %}show-for-{{ theme_config.mobilemenu_breakpoint }}{% endif %}">
 	                {% block header_extra %}{% endblock %}
 	                {% if config.plugins.langswitcher.enabled %}
@@ -115,6 +121,11 @@
             {% block javascripts %}
                 {% include 'partials/js.html.twig' %}
                 {% do assets.addJs('theme://bower_components/what-input/what-input.js',{'priority':105, 'group':'bottom'}) %}
+                {% if page.header.wow_js == "disabled" %}
+                {% elseif page.header.wow_js == "enabled" or theme_config.wow_js.enabled %}
+                    {% do assets.addJs('theme://js/wow.js',{'priority':101, 'group':'bottom'}) %}
+                    {% do assets.addInlineJs('var wow = new WOW();wow.init();',{'priority':99, 'pipeline':false, 'group':'bottom'}) %}
+                {% endif %}
                 {% if page.header.google_prettify == "disabled" %}
                 {% elseif page.header.google_prettify == "enabled" or theme_config.google_prettify.enabled %}
                     {% do assets.addJs('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js',{'priority':100, 'group':'bottom'}) %}
