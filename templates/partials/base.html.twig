@@ -26,8 +26,8 @@
         {% elseif page.header.fontawesome == "enabled" or theme_config.fontawesome.enabled %}
             {% do assets.addCss('theme://css/font-awesome.min.css',115) %}
         {% endif %}
-        {% if theme_config.google_fonts_logo.enabled %}
-            {% do assets.addCss('//fonts.googleapis.com/css?family=Special+Elite',105) %}
+        {% if theme_config.site_title.enabled and theme_config.google_fonts_logo.enabled %}
+            <link href="//fonts.googleapis.com/css?family=Special+Elite&text={{ site.title|e }}" type="text/css" rel="stylesheet" />
         {% endif %}
     {% endblock %}
     {{ assets.css() }}
