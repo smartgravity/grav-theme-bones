@@ -10,7 +10,8 @@
         {% for item in page.header.gallery %}
         {% set item_title = item.title %}
         {% set item_desc = item.description %}
-          <div class="column">
+        {% set image_css = page.header.image_styles %}
+          <div class="column{% if image_css %} {{ image_css }}{% endif %}">
             {{ page.media[item.image].lightbox(1920,1080).cropResize(960,540).html('Image') }}
             {% if item_title %}<h5>{{ item_title }}</h5>{% endif %}
             {% if item_desc %}<p>{{ item_desc }}</p>{% endif %}

@@ -14,9 +14,9 @@ form:
 
           fields:
 
-            css_files_title:
+            extra_files_title:
               type: section
-              title: CSS
+              title: Features
               underline: true
 
             header.fontawesome:
@@ -29,10 +29,25 @@ form:
                   'enabled': 'Enabled'
                   'disabled': 'Disabled'
 
-            google_files_title:
-              type: section
-              title: Google Prettify
-              underline: true
+            header.animate_css:
+                type: select
+                label: Animate CSS
+                size: small
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
+
+            header.wow_js:
+                type: select
+                label: WOW.js
+                size: small
+                default: use_global
+                options:
+                  'use_global': 'Use Global'
+                  'enabled': 'Enabled'
+                  'disabled': 'Disabled'
 
             header.google_prettify:
                 type: select

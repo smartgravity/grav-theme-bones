@@ -1,3 +1,16 @@
+# v0.5.0
+## 2/8/2016
+
+1. [](#new)
+    * Added WOW.js for scroll trigger
+    * Added Animate.css for content animations
+2. [](#improved)
+    * Update MotionUI to v1.2.0
+    * Added more style class options to modular twig templates for content animation classes
+    * Added text parameter to Google Logo Font to only pull characters in the title
+3. [](#bugfix)
+    * Added missing ui-animations.css to twig template
+
 # v0.4.1
 ## 2/2/2016
 

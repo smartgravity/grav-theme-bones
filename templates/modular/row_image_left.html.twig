@@ -4,13 +4,15 @@
 	<div class="row">
 		<div class="sg-content">
 			<h2 class="sg-title">{{ page.title }}</h2>
-			<div class="medium-6 columns small-nopaddingleft small-nopaddingright medium-nopaddingleft sg-center">
+			{% set image_css = page.header.image_styles %}
+			<div class="medium-6 columns small-nopaddingleft small-nopaddingright medium-nopaddingleft sg-center{% if image_css %} {{ image_css }}{% endif %}">
 				{% set image = page.media.images|first %}
 		    {% if image %}
 		        {{ image.cropResize(960,960).html() }}
 		    {% endif %}
 			</div>
-			<div class="medium-6 columns medium-nopaddingright">
+			{% set content_css = page.header.content_styles %}
+			<div class="medium-6 columns medium-nopaddingright{% if content_css %} {{ content_css }}{% endif %}">
 			  {{ content }}
 			</div>
 		</div>

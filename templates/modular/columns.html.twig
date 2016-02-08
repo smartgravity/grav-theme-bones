@@ -8,7 +8,8 @@
         <div class="row small-up-{{ (column_num // 3) }} medium-up-{{ (column_num // 2) + 1 }} large-up-{{ column_num }}">
         {% for column in page.content|split('<hr />') %}
           <div class="column">
-  	        <div class="sg-column-block">
+  	        {% set column_css = page.header.column_styles %}
+            <div class="sg-column-block{% if column_css %} {{ column_css }}{% endif %}">
   	          {{ column }}
   	        </div>
           </div>

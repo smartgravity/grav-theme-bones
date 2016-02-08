@@ -1,12 +1,14 @@
 enabled: true
-dropdown:
-  enabled: false
-fontawesome:
+site_title:
   enabled: true
 google_fonts_logo:
   enabled: true
+fontawesome:
+  enabled: true
 google_prettify:
   enabled: true
+dropdown:
+  enabled: false
 mobilemenu_breakpoint: large
 mobilemenu_position: left
 foundation_offcanvas_js:
@@ -36,8 +38,6 @@ css_forms:
 css_visibility_classes:
   enabled: true
 css_float_classes:
-  enabled: true
-css_callout:
   enabled: true
 css_menu:
   enabled: true
