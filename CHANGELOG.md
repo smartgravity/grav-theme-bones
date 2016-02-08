@@ -8,6 +8,7 @@
     * Update MotionUI to v1.2.0
     * Added more style class options to modular twig templates for content animation classes
     * Added text parameter to Google Logo Font to only pull characters in the title
+    * Added option to remove site title from header
 3. [](#bugfix)
     * Added missing ui-animations.css to twig template
 
