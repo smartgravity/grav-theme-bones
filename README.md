@@ -7,11 +7,12 @@
 [![AnimateCSS Version](https://img.shields.io/badge/Animate.css-v3.5.1-f35626.svg)](http://daneden.github.io/animate.css/) 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](http://sgne.ws/1KPEcMD)
 
-**Bones** is a [Grav](http://getgrav.org) theme based on [Foundation6](http://foundation.zurb.com/) by Zurb and Includes [FontAwesome](https://fortawesome.github.io/Font-Awesome/). This is a base theme meant to be customized. The idea is to provide a starting point for your next custom project.
+**Bones** is a [Grav](http://getgrav.org) theme based on [Foundation6](http://foundation.zurb.com/) by Zurb and Includes [FontAwesome](https://fortawesome.github.io/Font-Awesome/), [WOW.js](http://mynameismatthieu.com/WOW/), and [Animate.css](http://daneden.github.io/animate.css/). This is a base theme meant to be customized. The idea is to provide a starting point for your next custom project.
+
+#### [Bones - Demo](http://demos.smartgravity.com/grav-bones/)
 
 
 ![Bones Screenshot](assets/bones-macbook-pro.png)
-
 
 # Installation
 
@@ -59,22 +60,6 @@ Manually updating Bones is pretty simple. Here is what you will need to do to ge
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
 > Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/themes`) will remain intact.
-
-## Features
-
-* Fully responsive with off-page mobile navigation
-* Built-in support for on-page navigation
-* Multiple page template types
-* Fontawesome icon support
-
-### Supported Page Templates
-
-* Default view template
-* Blog view template
-* Error view template
-* Blog item view template
-* Modular view templates
-* Gallery modular template
 
 # Setup
 
