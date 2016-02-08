@@ -25,7 +25,11 @@ form:
           fields:
             header.styles:
               type: textarea
-              label: CSS Classes
+              label: Row Styles
+              size: medium
+            header.column_styles:
+              type: textarea
+              label: Column Block Styles
               size: medium
             header.column_number:
               type: select

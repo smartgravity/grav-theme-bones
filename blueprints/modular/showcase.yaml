@@ -26,7 +26,11 @@ form:
           fields:
             header.styles:
               type: textarea
-              label: CSS Classes
+              label: Row Styles
+              size: medium
+            header.content_styles:
+              type: textarea
+              label: Content Block Styles
               size: medium
 
         assets:
