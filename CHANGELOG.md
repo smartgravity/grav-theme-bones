@@ -1,3 +1,10 @@
+# v0.5.1
+## 3/13/2016
+
+1. [](#bugfix)
+    * Fixed in_page_navigation blueprint
+    * Fixed Blog Item Next/Previous pagination button arrows
+
 # v0.5.0
 ## 2/8/2016
 
