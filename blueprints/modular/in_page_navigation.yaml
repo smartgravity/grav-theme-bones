@@ -17,7 +17,7 @@ form:
             overrides:
               fields:
                 header.template:
-                  default: modular/row
+                  default: modular/in_page_navigation
                   @data-options: '\Grav\Common\Page\Pages::modularTypes'
 
         content:
