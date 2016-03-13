@@ -1,0 +1,41 @@
+title: In Page Navigation
+@extends: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/in_page_navigation
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/in_page_navigation
+                  @data-options: '\Grav\Common\Page\Pages::modularTypes'
+
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+
+            content:
+              type: ignore
+
+            uploads:
+              type: ignore
+
+        assets:
+          type: ignore
