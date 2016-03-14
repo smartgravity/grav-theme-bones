@@ -203,7 +203,7 @@ ol {
   margin-bottom: 2.5rem; }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  #listing.column, #listing.columns, #item.column, #item.columns {
+  #listing.column, #listing.columns, #item.column, #item.columns, #sidebar.column, #sidebar.columns {
     padding-left: 0;
     padding-right: 0; } }
 .blog-header-image {
