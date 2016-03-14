@@ -1,3 +1,9 @@
+# v0.5.2
+## 3/13/2016
+
+1. [](#bugfix)
+    * Fix for header and body content alignment issues
+
 # v0.5.1
 ## 3/13/2016
 
