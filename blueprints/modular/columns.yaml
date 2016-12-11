@@ -1,5 +1,5 @@
 title: Columns
-@extends: default
+'@extends': default
 
 form:
   fields:

@@ -1,5 +1,5 @@
 title: In Page Navigation
-@extends: default
+'@extends': default
 
 form:
   fields:
