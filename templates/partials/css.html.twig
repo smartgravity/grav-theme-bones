@@ -3,8 +3,9 @@
 {% endif %}
 {% if theme_config.css_grid.enabled %}
     {% do assets.addCss('theme://css/grid.css',149) %}
-		{% elseif theme_config.css_flex_grid.enabled %}
+	{% elseif theme_config.css_flex_grid.enabled %}
     {% do assets.addCss('theme://css/flex-grid.css',149) %}
+    {% do assets.addCss('theme://css/flex-classes.css',116) %}
 {% endif %}
 {% if theme_config.css_typography.enabled %}
     {% do assets.addCss('theme://css/typography.css',148) %}
@@ -14,6 +15,9 @@
 {% endif %}
 {% if theme_config.css_forms.enabled %}
     {% do assets.addCss('theme://css/forms.css',146) %}
+{% endif %}
+{% if theme_config.css_range_input.enabled %}
+    {% do assets.addCss('theme://css/range-input.css',146) %}
 {% endif %}
 {% if theme_config.css_visibility_classes.enabled %}
     {% do assets.addCss('theme://css/visibility-classes.css',145) %}
@@ -63,6 +67,9 @@
 {% if theme_config.css_menu.enabled %}
     {% do assets.addCss('theme://css/menu.css',130) %}
 {% endif %}
+{% if theme_config.css_menu_icon.enabled %}
+    {% do assets.addCss('theme://css/menu-icon.css',130) %}
+{% endif %}
 {% if theme_config.css_off_canvas.enabled %}
     {% do assets.addCss('theme://css/off-canvas.css',129) %}
 {% endif %}
@@ -74,6 +81,12 @@
 {% endif %}
 {% if theme_config.css_progress_bar.enabled %}
     {% do assets.addCss('theme://css/progress-bar.css',126) %}
+{% endif %}
+{% if theme_config.css_progress_element.enabled %}
+    {% do assets.addCss('theme://css/progress-element.css',126) %}
+{% endif %}
+{% if theme_config.css_meter_element.enabled %}
+    {% do assets.addCss('theme://css/meter-element.css',126) %}
 {% endif %}
 {% if theme_config.css_slider.enabled %}
     {% do assets.addCss('theme://css/slider.css',125) %}

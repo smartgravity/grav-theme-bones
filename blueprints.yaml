@@ -571,6 +571,16 @@ form:
                   0: Disabled
                 validate:
                   type: bool
+            css_range_input.enabled:
+                type: toggle
+                label: Range Input
+                highlight: 0
+                default: 0
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
             css_visibility_classes.enabled:
                 type: toggle
                 label: Visibility Classes
@@ -731,6 +741,16 @@ form:
                   0: Disabled
                 validate:
                   type: bool
+            css_menu_icon.enabled:
+                type: toggle
+                label: Menu Icon
+                highlight: 1
+                default: 1
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
             css_off_canvas.enabled:
                 type: toggle
                 label: Off Canvas
@@ -765,6 +785,26 @@ form:
                 type: toggle
                 label: Progress Bar
                 highlight: 1
+                default: 0
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
+            css_progress_element.enabled:
+                type: toggle
+                label: Progress Element
+                highlight: 0
+                default: 0
+                options:
+                  1: Enabled
+                  0: Disabled
+                validate:
+                  type: bool
+            css_meter_element.enabled:
+                type: toggle
+                label: Meter Element
+                highlight: 0
                 default: 0
                 options:
                   1: Enabled
