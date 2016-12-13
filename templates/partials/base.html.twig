@@ -128,7 +128,7 @@
                 {% endif %}
                 {% if page.header.google_prettify == "disabled" %}
                 {% elseif page.header.google_prettify == "enabled" or theme_config.google_prettify.enabled %}
-                    {% do assets.addJs('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js',{'priority':100, 'group':'bottom'}) %}
+                    {% do assets.addJs('https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js',{'priority':100, 'group':'bottom'}) %}
                 {% endif %}
             {% endblock %}
             {{ assets.js('bottom') }}
