@@ -15,6 +15,138 @@
 		"oAP": "\/.bowerrc",
 		"oF": 0
 		},
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/assets\/bones-macbook-pro.png": {
+		"ft": 32768,
+		"iS": 111581,
+		"oA": 0,
+		"oAP": "\/assets\/bones-macbook-pro.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/screenshot.jpg": {
+		"ft": 16384,
+		"iS": 92992,
+		"oA": 0,
+		"oAP": "\/assets\/screenshot.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/blueprints.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/asset\/file.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/asset\/file.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/blog.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/blog.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/default.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/default.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/form.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/form.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/item.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/item.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/columns.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/columns.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/gallery.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/gallery.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/in_page_navigation.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/in_page_navigation.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/row.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/row.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/row_image_left.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/row_image_left.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/row_image_right.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/row_image_right.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/showcase.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/showcase.yaml",
+		"oF": 0
+		},
+	"\/blueprints\/modular\/text.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blueprints\/modular\/text.yaml",
+		"oF": 0
+		},
+	"\/bones-macbook-pro.png": {
+		"ft": 32768,
+		"iS": 111581,
+		"oA": 0,
+		"oAP": "\/bones-macbook-pro.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bones.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bones.php",
+		"oF": 0
+		},
+	"\/bones.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bones.yaml",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3413,6 +3545,26 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/animate.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/animate-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/animate.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/animate.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/badge.css": {
 		"aP": 0,
 		"bl": 0,
@@ -3560,6 +3712,26 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/float-classes-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/font-awesome.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/font-awesome-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/font-awesome.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/font-awesome.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -3843,34 +4015,90 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/index.html": {
+	"\/fonts\/fontawesome-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.html",
+		"oAP": "\/fonts\/fontawesome-webfont.eot",
 		"oF": 0
 		},
-	"\/js\/app.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/app-min.js",
+	"\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.svg",
 		"oF": 0,
-		"sC": 1,
-		"tS": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/js\/min\/app-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/app-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/app-min.js.map": {
+	"\/fonts\/fontawesome-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/js\/min\/app-min.js.map",
+		"oAP": "\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/images\/favicon.png": {
+		"ft": 32768,
+		"iS": 738,
+		"oA": 0,
+		"oAP": "\/images\/favicon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/logo@2x.png": {
+		"ft": 32768,
+		"iS": 14789,
+		"oA": 0,
+		"oAP": "\/images\/logo@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/wow.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/wow-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/wow.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/wow.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/languages.yaml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/languages.yaml",
+		"oF": 0
+		},
+	"\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/LICENSE",
 		"oF": 0
 		},
 	"\/package.json": {
@@ -3898,6 +4126,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/screenshot.jpg": {
+		"ft": 16384,
+		"iS": 92992,
+		"oA": 0,
+		"oAP": "\/screenshot.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/scss\/_settings.scss": {
 		"aP": 0,
@@ -4548,6 +4784,184 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/templates\/blog.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/blog.html.twig",
+		"oF": 0
+		},
+	"\/templates\/default.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/default.html.twig",
+		"oF": 0
+		},
+	"\/templates\/error.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/error.html.twig",
+		"oF": 0
+		},
+	"\/templates\/form.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/form.html.twig",
+		"oF": 0
+		},
+	"\/templates\/formdata.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/formdata.html.twig",
+		"oF": 0
+		},
+	"\/templates\/forms\/data.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/forms\/data.html.twig",
+		"oF": 0
+		},
+	"\/templates\/forms\/data.txt.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/forms\/data.txt.twig",
+		"oF": 0
+		},
+	"\/templates\/forms\/form.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/forms\/form.html.twig",
+		"oF": 0
+		},
+	"\/templates\/item.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/item.html.twig",
+		"oF": 0
+		},
+	"\/templates\/macros\/macros.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/macros\/macros.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/columns.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/columns.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/gallery.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/gallery.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/in_page_navigation.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/in_page_navigation.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/row.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/row.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/row_image_left.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/row_image_left.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/row_image_right.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/row_image_right.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/showcase.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/showcase.html.twig",
+		"oF": 0
+		},
+	"\/templates\/modular\/text.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/modular\/text.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/base.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/base.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/blog_item.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/blog_item.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/css.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/css.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/js.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/js.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/metadata.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/metadata.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/navigation.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/navigation.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/navigation_mobile.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/navigation_mobile.html.twig",
+		"oF": 0
+		},
+	"\/templates\/partials\/sidebar.html.twig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/partials\/sidebar.html.twig",
+		"oF": 0
+		},
+	"\/thumbnail.jpg": {
+		"ft": 16384,
+		"iS": 27736,
+		"oA": 0,
+		"oAP": "\/thumbnail.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/zurb-foundation-macbook.png": {
+		"ft": 32768,
+		"iS": 35338,
+		"oA": 0,
+		"oAP": "\/zurb-foundation-macbook.png",
+		"oF": 0,
+		"opt": 0
 		}
 	},
 "hooks": [

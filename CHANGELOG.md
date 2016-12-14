@@ -1,3 +1,15 @@
+# v0.6.0
+## 12/13/2016
+
+1. [](#improved)
+    * Updated Foundation to v6.2.4
+    * Updated MotionUI to v1.2.2
+    * Updated FontAwesome to v4.7.0
+    * Udated Animate.css to v3.5.2
+2. [](#bugfix)
+    * Fixed URL for code-prettify. Thank you @hoalex
+    * Added single quotes around @extends for all blueprint files using inheritance
+
 # v0.5.2
 ## 3/13/2016
 
@@ -18,7 +30,7 @@
     * Added WOW.js for scroll trigger
     * Added Animate.css for content animations
 2. [](#improved)
-    * Update MotionUI to v1.2.0
+    * Updated MotionUI to v1.2.0
     * Added more style class options to modular twig templates for content animation classes
     * Added text parameter to Google Logo Font to only pull characters in the title
     * Added option to remove site title from header
