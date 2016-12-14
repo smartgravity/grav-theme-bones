@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -38,8 +38,7 @@
     display: block;
     padding: 1.25rem 1.5rem;
     line-height: 1;
-    font-size: 12px;
-    color: #1E8CC7; }
+    font-size: 0.75rem; }
     .tabs-title > a:hover {
       background: #fff; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {

@@ -148,9 +148,10 @@ ol {
 .sg-in-page-menu {
   width: 100%; }
 
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+@media screen and (max-width: 39.9375em) {
   #sg-in-page-navigation .menu > li > a {
     padding: 0.4rem 0.8rem; } }
+
 /* END SmartGravit IN PAGE NAVIGATION */
 /* BEGIN TAXONOMY TAGS */
 .tags a {
@@ -202,10 +203,11 @@ ol {
 .list-item {
   margin-bottom: 2.5rem; }
 
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+@media screen and (max-width: 39.9375em) {
   #listing.column, #listing.columns, #item.column, #item.columns, #sidebar.column, #sidebar.columns {
     padding-left: 0;
     padding-right: 0; } }
+
 .blog-header-image {
   background-size: cover;
   background-position: center;
@@ -268,6 +270,7 @@ code {
 img.sg-align-left, img.sg-align-right, img.sg-align-center {
   margin-top: 0.3rem;
   margin-bottom: 1rem; }
+
 img.sg-align-center {
   margin-left: auto;
   margin-right: auto;
@@ -283,6 +286,7 @@ img.sg-align-center {
     float: right;
     max-width: 50%;
     margin-left: 1rem; } }
+
 .hide-title h2.sg-title {
   display: none; }
 
@@ -291,8 +295,10 @@ img.sg-align-center {
 
 .title-spacer-small h2.sg-title {
   padding: 0.5rem 0 1rem; }
+
 .title-spacer-medium h2.sg-title {
   padding: 1rem 0 2rem; }
+
 .title-spacer-large h2.sg-title {
   padding: 2rem 0 3rem; }
 
@@ -327,98 +333,74 @@ img.sg-align-center {
   padding-left: 0 !important; }
 
 /* small only covers small only */
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+@media screen and (max-width: 39.9375em) {
   .small-nomarginall {
     margin: 0 !important; }
-
   .small-nomargintop {
     margin-top: 0 !important; }
-
   .small-nomarginright {
     margin-right: 0 !important; }
-
   .small-nomarginbottom {
     margin-bottom: 0 !important; }
-
   .small-nomarginleft {
     margin-left: 0 !important; }
-
   .small-nopaddingall {
     padding: 0 !important; }
-
   .small-nopaddingtop {
     padding-top: 0 !important; }
-
   .small-nopaddingright {
     padding-right: 0 !important; }
-
   .small-nopaddingbottom {
     padding-bottom: 0 !important; }
-
   .small-nopaddingleft {
     padding-left: 0 !important; } }
+
 /* medium covers medium size and up */
 @media screen and (min-width: 40em) {
   .medium-nomarginall {
     margin: 0 !important; }
-
   .medium-nomargintop {
     margin-top: 0 !important; }
-
   .medium-nomarginright {
     margin-right: 0 !important; }
-
   .medium-nomarginbottom {
     margin-bottom: 0 !important; }
-
   .medium-nomarginleft {
     margin-left: 0 !important; }
-
   .medium-nopaddingall {
     padding: 0 !important; }
-
   .medium-nopaddingtop {
     padding-top: 0 !important; }
-
   .medium-nopaddingright {
     padding-right: 0 !important; }
-
   .medium-nopaddingbottom {
     padding-bottom: 0 !important; }
-
   .medium-nopaddingleft {
     padding-left: 0 !important; } }
+
 /* large covers large size and up */
 @media screen and (min-width: 64em) {
   .large-nomarginall {
     margin: 0 !important; }
-
   .large-nomargintop {
     margin-top: 0 !important; }
-
   .large-nomarginright {
     margin-right: 0 !important; }
-
   .large-nomarginbottom {
     margin-bottom: 0 !important; }
-
   .large-nomarginleft {
     margin-left: 0 !important; }
-
   .large-nopaddingall {
     padding: 0 !important; }
-
   .large-nopaddingtop {
     padding-top: 0 !important; }
-
   .large-nopaddingright {
     padding-right: 0 !important; }
-
   .large-nopaddingbottom {
     padding-bottom: 0 !important; }
-
   .large-nopaddingleft {
     padding-left: 0 !important; } }
+
 .sg-spacer-small .sg-content {
   padding: 1rem 0; }
   .off-canvas .sg-spacer-small .sg-content {
@@ -501,7 +483,9 @@ blockquote > blockquote > blockquote {
   background-color: #fff; }
   #sg-mainmenu .menu > li > a:hover, #sg-mainmenu-mobile .menu > li > a:hover {
     background-color: #f6f6f6; }
+
 #sg-mainmenu .menu > li.active > a, #sg-mainmenu-mobile .menu > li.active > a {
+  color: #1E8CC7;
   background-color: #f6f6f6; }
 
 .mobile-nav-toggle, .sg-mobilemenu-icon {
@@ -614,20 +598,28 @@ code {
 
 .column-color-light-gray .sg-column-block {
   background-color: #f6f6f6; }
+
 .column-color-medium-gray .sg-column-block {
   background-color: #cacaca; }
+
 .column-color-dark-gray .sg-column-block {
   background-color: #444; }
+
 .column-color-yellow .sg-column-block {
   background-color: #ffb300; }
+
 .column-color-orange .sg-column-block {
   background-color: #ee7933; }
+
 .column-color-blue .sg-column-block {
   background-color: #0183a8; }
+
 .column-color-red .sg-column-block {
   background-color: #ef4a44; }
+
 .column-color-purple .sg-column-block {
   background-color: #874f9a; }
+
 .column-color-green .sg-column-block {
   background-color: #00b060; }
 
@@ -637,12 +629,14 @@ code {
   .button.light:hover, .button.light:focus {
     color: rgba(31, 29, 15, 0.75);
     background-color: rgba(255, 255, 255, 0.75); }
+
 .button.dark {
   color: #fff;
   background-color: #1F1D0F; }
   .button.dark:hover, .button.dark:focus {
     color: rgba(255, 255, 255, 0.75);
     background-color: rgba(31, 29, 15, 0.75); }
+
 .button.hollow.light {
   color: #fff;
   border-color: #fff;
@@ -650,6 +644,7 @@ code {
   .button.hollow.light:hover, .button.hollow.light:focus {
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(255, 255, 255, 0.75); }
+
 .button.hollow.dark {
   color: #1F1D0F;
   border-color: #1F1D0F;
@@ -674,6 +669,7 @@ blockquote > blockquote > blockquote > p {
     color: #b06d0f; }
     blockquote > blockquote > blockquote > p a:hover {
       color: #f2b866; }
+
 blockquote > blockquote > blockquote > blockquote > p {
   border-color: #D9534F;
   background: #FDF7F7;
@@ -682,6 +678,7 @@ blockquote > blockquote > blockquote > blockquote > p {
     color: #8b211e; }
     blockquote > blockquote > blockquote > blockquote > p a:hover {
       color: #de6764; }
+
 blockquote > blockquote > blockquote > blockquote > blockquote > p {
   border-color: #5BC0DE;
   background: #F4F8FA;
@@ -690,6 +687,7 @@ blockquote > blockquote > blockquote > blockquote > blockquote > p {
     color: #1f7e9a; }
     blockquote > blockquote > blockquote > blockquote > blockquote > p a:hover {
       color: #70c8e2; }
+
 blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p {
   border-color: #5CB85C;
   background: #F1F9F1;

@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -18,6 +18,7 @@ body {
 .off-canvas-wrapper-inner {
   position: relative;
   width: 100%;
+  min-height: 100%;
   transition: transform 0.5s ease; }
   .off-canvas-wrapper-inner::before, .off-canvas-wrapper-inner::after {
     content: ' ';
@@ -32,6 +33,7 @@ body {
   transition: transform 0.5s ease;
   backface-visibility: hidden;
   z-index: 1;
+  padding-bottom: 0.1px;
   box-shadow: 0 0 10px rgba(31, 29, 15, 0.5); }
 
 .js-off-canvas-exit {
@@ -74,13 +76,13 @@ body {
     position: fixed; }
     .position-left.reveal-for-medium ~ .off-canvas-content {
       margin-left: 250px; }
-
   .position-right.reveal-for-medium {
     right: 0;
     z-index: auto;
     position: fixed; }
     .position-right.reveal-for-medium ~ .off-canvas-content {
       margin-right: 250px; } }
+
 @media screen and (min-width: 64em) {
   .position-left.reveal-for-large {
     left: 0;
@@ -88,7 +90,6 @@ body {
     position: fixed; }
     .position-left.reveal-for-large ~ .off-canvas-content {
       margin-left: 250px; }
-
   .position-right.reveal-for-large {
     right: 0;
     z-index: auto;

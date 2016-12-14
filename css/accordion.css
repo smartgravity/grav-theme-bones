@@ -1,17 +1,20 @@
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .accordion {
   list-style-type: none;
   background: #fff;
-  border: 1px solid #f6f6f6;
-  border-bottom: 0;
-  border-radius: 3px;
   margin-left: 0; }
+
+.accordion-item:first-child > :first-child {
+  border-radius: 3px 3px 0 0; }
+
+.accordion-item:last-child > :last-child {
+  border-radius: 0 0 3px 3px; }
 
 .accordion-title {
   display: block;
@@ -20,7 +23,11 @@
   font-size: 0.75rem;
   color: #1E8CC7;
   position: relative;
-  border-bottom: 1px solid #f6f6f6; }
+  border: 1px solid #f6f6f6;
+  border-bottom: 0; }
+  :last-child:not(.is-active) > .accordion-title {
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #f6f6f6; }
   .accordion-title:hover, .accordion-title:focus {
     background-color: #f6f6f6; }
   .accordion-title::before {
@@ -35,5 +42,9 @@
 .accordion-content {
   padding: 1rem;
   display: none;
-  border-bottom: 1px solid #f6f6f6;
-  background-color: #fff; }
+  border: 1px solid #f6f6f6;
+  border-bottom: 0;
+  background-color: #fff;
+  color: #1E8CC7; }
+  :last-child > .accordion-content:last-child {
+    border-bottom: 1px solid #f6f6f6; }

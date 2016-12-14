@@ -1,11 +1,17 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 body.is-reveal-open {
   overflow: hidden; }
+
+html.is-reveal-open,
+html.is-reveal-open body {
+  min-height: 100%;
+  overflow: hidden;
+  user-select: none; }
 
 .reveal-overlay {
   display: none;
@@ -23,10 +29,12 @@ body.is-reveal-open {
   z-index: 1006;
   padding: 1rem;
   border: 1px solid #cacaca;
-  margin: 6.25rem auto 0;
   background-color: #fff;
   border-radius: 3px;
-  position: absolute;
+  position: relative;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-y: auto; }
   [data-whatinput='mouse'] .reveal {
     outline: 0; }
@@ -70,4 +78,19 @@ body.is-reveal-open {
     min-height: 100vh;
     max-width: none;
     margin-left: 0;
-    border: 0; }
+    border: 0;
+    border-radius: 0; }
+  @media screen and (max-width: 39.9375em) {
+    .reveal {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      height: 100vh;
+      min-height: 100vh;
+      max-width: none;
+      margin-left: 0;
+      border: 0;
+      border-radius: 0; } }
+  .reveal.without-overlay {
+    position: fixed; }

@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -9,11 +9,11 @@
   display: block; }
   .media-object img {
     max-width: none; }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  @media screen and (max-width: 39.9375em) {
     .media-object.stack-for-small .media-object-section {
-      display: block;
       padding: 0;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      display: block; }
       .media-object.stack-for-small .media-object-section img {
         width: 100%; } }
 
@@ -24,6 +24,8 @@
     padding-right: 1rem; }
   .media-object-section:last-child:not(:nth-child(2)) {
     padding-left: 1rem; }
+  .media-object-section > :last-child {
+    margin-bottom: 0; }
   .media-object-section.middle {
     vertical-align: middle; }
   .media-object-section.bottom {

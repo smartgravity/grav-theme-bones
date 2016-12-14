@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -40,22 +39,22 @@
   .pagination .disabled {
     padding: 0.1875rem 0.625rem;
     color: #cacaca;
-    cursor: default; }
+    cursor: not-allowed; }
     .pagination .disabled:hover {
       background: transparent; }
   .pagination .ellipsis::after {
-    content: '…';
+    content: '\2026';
     padding: 0.1875rem 0.625rem;
     color: #1F1D0F; }
 
 .pagination-previous a::before,
 .pagination-previous.disabled::before {
-  content: '«';
+  content: '\00ab';
   display: inline-block;
   margin-right: 0.5rem; }
 
 .pagination-next a::after,
 .pagination-next.disabled::after {
-  content: '»';
+  content: '\00bb';
   display: inline-block;
   margin-left: 0.5rem; }

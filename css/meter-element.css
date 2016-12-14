@@ -1,0 +1,40 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.4
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+meter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  background: #cacaca;
+  border: 0; }
+  meter::-webkit-meter-bar {
+    background: #cacaca;
+    border-radius: 3px;
+    border: 0; }
+  meter::-webkit-meter-inner-element {
+    border-radius: 3px; }
+  meter::-webkit-meter-optimum-value {
+    background: #3adb76;
+    border-radius: 3px; }
+  meter::-webkit-meter-suboptimum-value {
+    background: #ffae00;
+    border-radius: 3px; }
+  meter::-webkit-meter-even-less-good-value {
+    background: #ec5840;
+    border-radius: 3px; }
+  meter::-moz-meter-bar {
+    background: #1E8CC7;
+    border-radius: 3px; }
+  meter:-moz-meter-optimum::-moz-meter-bar {
+    background: #3adb76; }
+  meter:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: #ffae00; }
+  meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: #ec5840; }

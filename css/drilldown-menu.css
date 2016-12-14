@@ -1,19 +1,20 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .is-drilldown {
   position: relative;
   overflow: hidden; }
+  .is-drilldown li {
+    display: block !important; }
 
 .is-drilldown-submenu {
   position: absolute;
   top: 0;
   left: 100%;
   z-index: -1;
-  height: 100%;
   width: 100%;
   background: #fff;
   transition: transform 0.15s linear; }

@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -20,15 +20,19 @@
   .menu a,
   .menu button {
     margin-bottom: 0; }
-  .menu > li > a > img,
-  .menu > li > a > i {
+  .menu > li > a img,
+  .menu > li > a i,
+  .menu > li > a svg {
     vertical-align: middle; }
-  .menu > li > a > span {
-    vertical-align: middle; }
-  .menu > li > a > img,
-  .menu > li > a > i {
-    display: inline-block;
-    margin-right: 0.25rem; }
+    .menu > li > a img + span,
+    .menu > li > a i + span,
+    .menu > li > a svg + span {
+      vertical-align: middle; }
+  .menu > li > a img,
+  .menu > li > a i,
+  .menu > li > a svg {
+    margin-right: 0.25rem;
+    display: inline-block; }
   .menu > li {
     display: table-cell; }
   .menu.vertical > li {
@@ -49,22 +53,31 @@
     margin-right: 1rem; }
   .menu.simple a {
     padding: 0; }
+  .menu.align-right::before, .menu.align-right::after {
+    content: ' ';
+    display: table; }
+  .menu.align-right::after {
+    clear: both; }
   .menu.align-right > li {
     float: right; }
   .menu.expanded {
+    width: 100%;
     display: table;
-    table-layout: fixed;
-    width: 100%; }
+    table-layout: fixed; }
     .menu.expanded > li:first-child:last-child {
       width: 100%; }
   .menu.icon-top > li > a {
     text-align: center; }
-    .menu.icon-top > li > a > img,
-    .menu.icon-top > li > a > i {
+    .menu.icon-top > li > a img,
+    .menu.icon-top > li > a i,
+    .menu.icon-top > li > a svg {
       display: block;
       margin: 0 auto 0.25rem; }
   .menu.nested {
     margin-left: 1rem; }
+  .menu .active > a {
+    color: #fff;
+    background: #1E8CC7; }
 
 .menu-text {
   font-weight: bold;
@@ -73,6 +86,11 @@
   padding-top: 0;
   padding-bottom: 0;
   padding: 0.7rem 1rem; }
+
+.menu-centered {
+  text-align: center; }
+  .menu-centered > .menu {
+    display: inline-block; }
 
 .no-js [data-responsive-menu] ul {
   display: none; }

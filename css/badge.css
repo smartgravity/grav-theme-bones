@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -19,9 +19,9 @@
   .badge.success {
     background: #3adb76;
     color: #fff; }
-  .badge.alert {
-    background: #ec5840;
-    color: #fff; }
   .badge.warning {
     background: #ffae00;
+    color: #fff; }
+  .badge.alert {
+    background: #ec5840;
     color: #fff; }

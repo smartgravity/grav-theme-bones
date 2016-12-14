@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -8,35 +8,34 @@ table {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 3px; }
-  thead,
-  tbody,
-  tfoot {
+  table thead,
+  table tbody,
+  table tfoot {
     border: 1px solid #f2f2f2;
     background-color: #fff; }
-
-  caption {
+  table caption {
     font-weight: bold;
     padding: 0.5rem 0.625rem 0.625rem; }
-
-  thead,
-  tfoot {
+  table thead {
     background: #f9f9f9;
     color: #1F1D0F; }
-    thead tr,
-    tfoot tr {
-      background: transparent; }
-    thead th,
-    thead td,
-    tfoot th,
-    tfoot td {
-      padding: 0.5rem 0.625rem 0.625rem;
-      font-weight: bold;
-      text-align: left; }
-
-  tbody tr:nth-child(even) {
+  table tfoot {
+    background: #f2f2f2;
+    color: #1F1D0F; }
+  table thead tr,
+  table tfoot tr {
+    background: transparent; }
+  table thead th,
+  table thead td,
+  table tfoot th,
+  table tfoot td {
+    padding: 0.5rem 0.625rem 0.625rem;
+    font-weight: bold;
+    text-align: left; }
+  table tbody tr:nth-child(even) {
     background-color: #f2f2f2; }
-  tbody th,
-  tbody td {
+  table tbody th,
+  table tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
 
 @media screen and (max-width: 63.9375em) {
@@ -56,7 +55,19 @@ table.scroll {
   width: 100%;
   overflow-x: auto; }
 
-table.hover tr:hover {
-  background-color: #fafafa; }
-table.hover tr:nth-of-type(even):hover {
+table.hover thead tr:hover {
+  background-color: #f4f4f4; }
+
+table.hover tfoot tr:hover {
   background-color: #ededed; }
+
+table.hover tbody tr:hover {
+  background-color: #fafafa; }
+
+table.hover tbody tr:nth-of-type(even):hover {
+  background-color: #ededed; }
+
+.table-scroll {
+  overflow-x: auto; }
+  .table-scroll table {
+    width: auto; }

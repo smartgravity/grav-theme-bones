@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.1.2
+ * Version 6.2.4
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -22,10 +22,10 @@
     background-color: #ebebeb; }
   .callout.success {
     background-color: #e1faea; }
-  .callout.alert {
-    background-color: #fce6e2; }
   .callout.warning {
     background-color: #fff3d9; }
+  .callout.alert {
+    background-color: #fce6e2; }
   .callout.small {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
