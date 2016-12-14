@@ -24,6 +24,7 @@
       }
     }
     &.active>a {
+      color: $primary-color;
       background-color: $light-gray;
     }
   }
