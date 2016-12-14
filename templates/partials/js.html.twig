@@ -80,7 +80,7 @@
     {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.box.js',{'priority':102, 'group':'bottom'}) %}
 {% endif %}
 {% if page.header.foundation_util_keyboard_js == "disabled" %}
-{% elseif page.header.foundation_util_keyboard_js == "enabled" or theme_config.foundation_util_keyboard_js.enabled %}
+{% elseif page.header.foundation_util_keyboard_js == "enabled" or theme_config.foundation_util_keyboard_js.enabled or page.header.foundation_offcanvas_js == "enabled" or theme_config.foundation_offcanvas_js.enabled %}
     {% do assets.addJs('theme://bower_components/foundation-sites/js/foundation.util.keyboard.js',{'priority':102, 'group':'bottom'}) %}
 {% endif %}
 {% if page.header.foundation_util_mediaQuery_js == "disabled" %}
