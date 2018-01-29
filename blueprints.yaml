@@ -41,6 +41,7 @@ form:
 
                         theme_links:
                           type: display
+                          style: vertical
                           label: <p style="padding-left:0;">The <strong>Bones</strong> theme is built on <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a> and meant to be customized. Easily toggle all javascript and stylesheets on and off so you can keep the page weight slim and still have all the resources you need. </p><p style="padding-left:0;"><a href="http://demos.smartgravity.com/grav-bones/" target="_blank">Grav Bones Demo <i class="fa fa-external-link"></i></a></p>
 
                     column2:
@@ -49,6 +50,7 @@ form:
 
                         theme_info:
                           type: display
+                          style: vertical
                           label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/bones-macbook-pro.png" alt="Bones Screenshot" style="width:100%;" /></p>
 
             foundation_info_title:
@@ -66,6 +68,7 @@ form:
 
                         foundation_info:
                           type: display
+                          style: vertical
                           label: <p style="padding-left:0;"><em>"Foundation is semantic, readable, flexible, and completely customizable. We’re constantly adding new resources and code snippets, including these handy HTML templates to help get you started!"</em></p><p style="padding-left:0;"><a href="http://foundation.zurb.com/" target="_blank">Foundation Homepage <i class="fa fa-external-link"></i></a><br /><a href="http://foundation.zurb.com/sites/docs/" target="_blank">Foundation Docs <i class="fa fa-external-link"></i></a></p>
 
                     column2:
@@ -74,6 +77,7 @@ form:
 
                         foundation_image:
                           type: display
+                          style: vertical
                           label: <p style="text-align:center;padding-left:0;"><img src="../../user/themes/bones/zurb-foundation-macbook.png" alt="Zurb Foundation" style="width:100%;" /></p>
 
         general_options:
