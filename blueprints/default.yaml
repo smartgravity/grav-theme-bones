@@ -1,7 +1,5 @@
 title: Item
-'@extends':
-    type: default
-    context: blueprints://pages
+extends@: parent@
 
 form:
   fields:
