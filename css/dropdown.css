@@ -1,22 +1,25 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .dropdown-pane {
-  background-color: #fff;
-  border: 1px solid #cacaca;
-  border-radius: 3px;
-  display: block;
-  font-size: 1rem;
-  padding: 1rem;
   position: absolute;
-  visibility: hidden;
+  z-index: 10;
   width: 300px;
-  z-index: 10; }
+  padding: 1rem;
+  visibility: hidden;
+  display: none;
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  background-color: #fff;
+  font-size: 1rem; }
+  .dropdown-pane.is-opening {
+    display: block; }
   .dropdown-pane.is-open {
-    visibility: visible; }
+    visibility: visible;
+    display: block; }
 
 .dropdown-pane.tiny {
   width: 100px; }

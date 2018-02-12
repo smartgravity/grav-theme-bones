@@ -4,7 +4,6 @@
   transform: translateY(-100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-in-down.mui-enter.mui-enter-active {
   transform: translateY(0); }
 
@@ -14,7 +13,6 @@
   transform: translateX(-100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-in-left.mui-enter.mui-enter-active {
   transform: translateX(0); }
 
@@ -24,7 +22,6 @@
   transform: translateY(100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-in-up.mui-enter.mui-enter-active {
   transform: translateY(0); }
 
@@ -34,7 +31,6 @@
   transform: translateX(100%);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-in-right.mui-enter.mui-enter-active {
   transform: translateX(0); }
 
@@ -44,7 +40,6 @@
   transform: translateY(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-out-down.mui-leave.mui-leave-active {
   transform: translateY(100%); }
 
@@ -54,7 +49,6 @@
   transform: translateX(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-out-right.mui-leave.mui-leave-active {
   transform: translateX(100%); }
 
@@ -64,7 +58,6 @@
   transform: translateY(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-out-up.mui-leave.mui-leave-active {
   transform: translateY(-100%); }
 
@@ -74,7 +67,6 @@
   transform: translateX(0);
   transition-property: transform, opacity;
   backface-visibility: hidden; }
-
 .slide-out-left.mui-leave.mui-leave-active {
   transform: translateX(-100%); }
 
@@ -83,7 +75,6 @@
   transition-timing-function: linear;
   opacity: 0;
   transition-property: opacity; }
-
 .fade-in.mui-enter.mui-enter-active {
   opacity: 1; }
 
@@ -92,7 +83,6 @@
   transition-timing-function: linear;
   opacity: 1;
   transition-property: opacity; }
-
 .fade-out.mui-leave.mui-leave-active {
   opacity: 0; }
 
@@ -103,7 +93,6 @@
   transform-origin: top;
   transition-property: transform, opacity;
   opacity: 0; }
-
 .hinge-in-from-top.mui-enter.mui-enter-active {
   transform: perspective(2000px) rotate(0deg);
   opacity: 1; }
@@ -115,7 +104,6 @@
   transform-origin: right;
   transition-property: transform, opacity;
   opacity: 0; }
-
 .hinge-in-from-right.mui-enter.mui-enter-active {
   transform: perspective(2000px) rotate(0deg);
   opacity: 1; }
@@ -127,7 +115,6 @@
   transform-origin: bottom;
   transition-property: transform, opacity;
   opacity: 0; }
-
 .hinge-in-from-bottom.mui-enter.mui-enter-active {
   transform: perspective(2000px) rotate(0deg);
   opacity: 1; }
@@ -139,7 +126,6 @@
   transform-origin: left;
   transition-property: transform, opacity;
   opacity: 0; }
-
 .hinge-in-from-left.mui-enter.mui-enter-active {
   transform: perspective(2000px) rotate(0deg);
   opacity: 1; }
@@ -151,7 +137,6 @@
   transform-origin: center;
   transition-property: transform, opacity;
   opacity: 0; }
-
 .hinge-in-from-middle-x.mui-enter.mui-enter-active {
   transform: perspective(2000px) rotate(0deg);
   opacity: 1; }
@@ -163,7 +148,6 @@
   transform-origin: center;
   transition-property: transform, opacity;
   opacity: 0; }
-
 .hinge-in-from-middle-y.mui-enter.mui-enter-active {
   transform: perspective(2000px) rotate(0deg);
   opacity: 1; }
@@ -175,7 +159,6 @@
   transform-origin: top;
   transition-property: transform, opacity;
   opacity: 1; }
-
 .hinge-out-from-top.mui-leave.mui-leave-active {
   transform: perspective(2000px) rotateX(-90deg);
   opacity: 0; }
@@ -187,7 +170,6 @@
   transform-origin: right;
   transition-property: transform, opacity;
   opacity: 1; }
-
 .hinge-out-from-right.mui-leave.mui-leave-active {
   transform: perspective(2000px) rotateY(-90deg);
   opacity: 0; }
@@ -199,7 +181,6 @@
   transform-origin: bottom;
   transition-property: transform, opacity;
   opacity: 1; }
-
 .hinge-out-from-bottom.mui-leave.mui-leave-active {
   transform: perspective(2000px) rotateX(90deg);
   opacity: 0; }
@@ -211,7 +192,6 @@
   transform-origin: left;
   transition-property: transform, opacity;
   opacity: 1; }
-
 .hinge-out-from-left.mui-leave.mui-leave-active {
   transform: perspective(2000px) rotateY(90deg);
   opacity: 0; }
@@ -223,7 +203,6 @@
   transform-origin: center;
   transition-property: transform, opacity;
   opacity: 1; }
-
 .hinge-out-from-middle-x.mui-leave.mui-leave-active {
   transform: perspective(2000px) rotateX(-90deg);
   opacity: 0; }
@@ -235,7 +214,6 @@
   transform-origin: center;
   transition-property: transform, opacity;
   opacity: 1; }
-
 .hinge-out-from-middle-y.mui-leave.mui-leave-active {
   transform: perspective(2000px) rotateY(-90deg);
   opacity: 0; }
@@ -246,7 +224,6 @@
   transform: scale(0.5);
   transition-property: transform, opacity;
   opacity: 0; }
-
 .scale-in-up.mui-enter.mui-enter-active {
   transform: scale(1);
   opacity: 1; }
@@ -257,7 +234,6 @@
   transform: scale(1.5);
   transition-property: transform, opacity;
   opacity: 0; }
-
 .scale-in-down.mui-enter.mui-enter-active {
   transform: scale(1);
   opacity: 1; }
@@ -268,7 +244,6 @@
   transform: scale(1);
   transition-property: transform, opacity;
   opacity: 1; }
-
 .scale-out-up.mui-leave.mui-leave-active {
   transform: scale(1.5);
   opacity: 0; }
@@ -279,7 +254,6 @@
   transform: scale(1);
   transition-property: transform, opacity;
   opacity: 1; }
-
 .scale-out-down.mui-leave.mui-leave-active {
   transform: scale(0.5);
   opacity: 0; }
@@ -290,7 +264,6 @@
   transform: rotate(-0.75turn);
   transition-property: transform, opacity;
   opacity: 0; }
-
 .spin-in.mui-enter.mui-enter-active {
   transform: rotate(0);
   opacity: 1; }
@@ -301,7 +274,6 @@
   transform: rotate(0);
   transition-property: transform, opacity;
   opacity: 1; }
-
 .spin-out.mui-leave.mui-leave-active {
   transform: rotate(0.75turn);
   opacity: 0; }
@@ -312,7 +284,6 @@
   transform: rotate(0.75turn);
   transition-property: transform, opacity;
   opacity: 0; }
-
 .spin-in-ccw.mui-enter.mui-enter-active {
   transform: rotate(0);
   opacity: 1; }
@@ -323,7 +294,6 @@
   transform: rotate(0);
   transition-property: transform, opacity;
   opacity: 1; }
-
 .spin-out-ccw.mui-leave.mui-leave-active {
   transform: rotate(-0.75turn);
   opacity: 0; }
@@ -366,34 +336,27 @@
 
 .shake {
   animation-name: shake-7; }
-
 @keyframes shake-7 {
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
     transform: translateX(7%); }
   5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
     transform: translateX(-7%); } }
-
 .spin-cw {
   animation-name: spin-cw-1turn; }
-
 @keyframes spin-cw-1turn {
   0% {
     transform: rotate(-1turn); }
   100% {
     transform: rotate(0); } }
-
 .spin-ccw {
   animation-name: spin-cw-1turn; }
-
 @keyframes spin-cw-1turn {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(1turn); } }
-
 .wiggle {
   animation-name: wiggle-7deg; }
-
 @keyframes wiggle-7deg {
   40%, 50%, 60% {
     transform: rotate(7deg); }
@@ -401,7 +364,6 @@
     transform: rotate(-7deg); }
   0%, 30%, 70%, 100% {
     transform: rotate(0); } }
-
 .shake,
 .spin-cw,
 .spin-ccw,
@@ -449,34 +411,27 @@
 
 .shake {
   animation-name: shake-7; }
-
 @keyframes shake-7 {
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
     transform: translateX(7%); }
   5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
     transform: translateX(-7%); } }
-
 .spin-cw {
   animation-name: spin-cw-1turn; }
-
 @keyframes spin-cw-1turn {
   0% {
     transform: rotate(-1turn); }
   100% {
     transform: rotate(0); } }
-
 .spin-ccw {
   animation-name: spin-cw-1turn; }
-
 @keyframes spin-cw-1turn {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(1turn); } }
-
 .wiggle {
   animation-name: wiggle-7deg; }
-
 @keyframes wiggle-7deg {
   40%, 50%, 60% {
     transform: rotate(7deg); }
@@ -484,7 +439,6 @@
     transform: rotate(-7deg); }
   0%, 30%, 70%, 100% {
     transform: rotate(0); } }
-
 .shake,
 .spin-cw,
 .spin-ccw,

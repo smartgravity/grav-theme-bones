@@ -1,42 +1,57 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 table {
+  border-collapse: collapse;
   width: 100%;
   margin-bottom: 1rem;
-  border-radius: 3px; }
-  table thead,
-  table tbody,
-  table tfoot {
+  border-radius: 0; }
+  thead,
+  tbody,
+  tfoot {
     border: 1px solid #f2f2f2;
     background-color: #fff; }
-  table caption {
-    font-weight: bold;
-    padding: 0.5rem 0.625rem 0.625rem; }
-  table thead {
+
+  caption {
+    padding: 0.5rem 0.625rem 0.625rem;
+    font-weight: bold; }
+
+  thead {
     background: #f9f9f9;
     color: #1F1D0F; }
-  table tfoot {
+
+  tfoot {
     background: #f2f2f2;
     color: #1F1D0F; }
-  table thead tr,
-  table tfoot tr {
+
+  thead tr,
+  tfoot tr {
     background: transparent; }
-  table thead th,
-  table thead td,
-  table tfoot th,
-  table tfoot td {
+  thead th,
+  thead td,
+  tfoot th,
+  tfoot td {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold;
     text-align: left; }
-  table tbody tr:nth-child(even) {
-    background-color: #f2f2f2; }
-  table tbody th,
-  table tbody td {
+
+  tbody th,
+  tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
+
+  tbody tr:nth-child(even) {
+    border-bottom: 0;
+    background-color: #f2f2f2; }
+
+  table.unstriped tbody {
+    background-color: #fff; }
+    table.unstriped tbody tr {
+      border-bottom: 0;
+      border-bottom: 1px solid #f2f2f2;
+      background-color: #fff; }
 
 @media screen and (max-width: 63.9375em) {
   table.stack thead {
@@ -57,14 +72,11 @@ table.scroll {
 
 table.hover thead tr:hover {
   background-color: #f4f4f4; }
-
 table.hover tfoot tr:hover {
   background-color: #ededed; }
-
 table.hover tbody tr:hover {
   background-color: #fafafa; }
-
-table.hover tbody tr:nth-of-type(even):hover {
+table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   background-color: #ededed; }
 
 .table-scroll {

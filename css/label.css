@@ -1,28 +1,31 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .label {
   display: inline-block;
   padding: 0.33333rem 0.5rem;
+  border-radius: 0;
   font-size: 0.8rem;
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  border-radius: 3px;
   background: #1E8CC7;
   color: #fff; }
+  .label.primary {
+    background: #1E8CC7;
+    color: #1F1D0F; }
   .label.secondary {
     background: #777;
     color: #fff; }
   .label.success {
     background: #3adb76;
-    color: #fff; }
+    color: #1F1D0F; }
   .label.warning {
     background: #ffae00;
-    color: #fff; }
+    color: #1F1D0F; }
   .label.alert {
     background: #ec5840;
-    color: #fff; }
+    color: #1F1D0F; }

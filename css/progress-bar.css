@@ -1,14 +1,14 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .progress {
-  background-color: #cacaca;
   height: 1rem;
   margin-bottom: 1rem;
-  border-radius: 3px; }
+  border-radius: 0;
+  background-color: #cacaca; }
   .progress.primary .progress-meter {
     background-color: #1E8CC7; }
   .progress.secondary .progress-meter {
@@ -25,8 +25,7 @@
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #1E8CC7;
-  border-radius: 3px; }
+  background-color: #1E8CC7; }
 
 .progress-meter-text {
   position: absolute;
@@ -38,5 +37,4 @@
   font-size: 0.75rem;
   font-weight: bold;
   color: #fff;
-  white-space: nowrap;
-  border-radius: 3px; }
+  white-space: nowrap; }

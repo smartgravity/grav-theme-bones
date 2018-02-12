@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -12,12 +12,13 @@
 
 .float-center {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
 
 .clearfix::before, .clearfix::after {
+  display: table;
   content: ' ';
-  display: table; }
-
+  flex-basis: 0;
+  order: 1; }
 .clearfix::after {
   clear: both; }

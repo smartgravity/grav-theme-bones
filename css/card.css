@@ -1,0 +1,36 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  border: 1px solid #f6f6f6;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: none;
+  overflow: hidden;
+  color: #1F1D0F; }
+  .card > :last-child {
+    margin-bottom: 0; }
+
+.card-divider {
+  flex: 0 1 auto;
+  display: flex;
+  padding: 1rem;
+  background: #f6f6f6; }
+  .card-divider > :last-child {
+    margin-bottom: 0; }
+
+.card-section {
+  flex: 1 0 auto;
+  padding: 1rem; }
+  .card-section > :last-child {
+    margin-bottom: 0; }
+
+.card-image {
+  min-height: 1px; }

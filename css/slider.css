@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -30,16 +30,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  position: absolute;
   left: 0;
   z-index: 1;
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
+  border-radius: 0;
   background-color: #1E8CC7;
   transition: all 0.2s ease-in-out;
-  touch-action: manipulation;
-  border-radius: 3px; }
+  touch-action: manipulation; }
   [data-whatinput='mouse'] .slider-handle {
     outline: 0; }
   .slider-handle:hover {

@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -9,13 +9,13 @@
 
 .orbit-container {
   position: relative;
+  height: 0;
   margin: 0;
-  overflow: hidden;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
 
 .orbit-slide {
-  width: 100%;
-  max-height: 100%; }
+  width: 100%; }
   .orbit-slide.no-motionui.is-active {
     top: 0;
     left: 0; }
@@ -24,18 +24,18 @@
   margin: 0; }
 
 .orbit-image {
-  margin: 0;
   width: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0; }
 
 .orbit-caption {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 1rem;
   margin-bottom: 0;
-  color: #fff;
-  background-color: rgba(31, 29, 15, 0.5); }
+  padding: 1rem;
+  background-color: rgba(31, 29, 15, 0.5);
+  color: #fff; }
 
 .orbit-previous, .orbit-next {
   position: absolute;
@@ -67,8 +67,8 @@
     width: 1.2rem;
     height: 1.2rem;
     margin: 0.1rem;
-    background-color: #cacaca;
-    border-radius: 50%; }
+    border-radius: 50%;
+    background-color: #cacaca; }
     .orbit-bullets button:hover {
       background-color: #8a8a8a; }
     .orbit-bullets button.is-active {

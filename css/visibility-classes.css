@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -18,7 +18,7 @@
   .show-for-small-only {
     display: none !important; } }
 
-@media screen and (min-width: 40em) {
+@media print, screen and (min-width: 40em) {
   .hide-for-medium {
     display: none !important; } }
 
@@ -34,7 +34,7 @@
   .show-for-medium-only {
     display: none !important; } }
 
-@media screen and (min-width: 64em) {
+@media print, screen and (min-width: 64em) {
   .hide-for-large {
     display: none !important; } }
 
@@ -55,15 +55,21 @@
   position: absolute !important;
   width: 1px;
   height: 1px;
+  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0); }
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0; }
 
 .show-on-focus:active, .show-on-focus:focus {
   position: static !important;
-  height: auto;
   width: auto;
+  height: auto;
   overflow: visible;
-  clip: auto; }
+  clip: auto;
+  white-space: normal;
+  clip-path: none; }
 
 .show-for-landscape,
 .hide-for-portrait {

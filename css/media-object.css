@@ -1,32 +1,34 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .media-object {
+  display: flex;
   margin-bottom: 1rem;
-  display: block; }
+  flex-wrap: nowrap; }
   .media-object img {
     max-width: none; }
+  @media screen and (max-width: 39.9375em) {
+    .media-object.stack-for-small {
+      flex-wrap: wrap; } }
   @media screen and (max-width: 39.9375em) {
     .media-object.stack-for-small .media-object-section {
       padding: 0;
       padding-bottom: 1rem;
-      display: block; }
+      flex-basis: 100%;
+      max-width: 100%; }
       .media-object.stack-for-small .media-object-section img {
         width: 100%; } }
 
 .media-object-section {
-  display: table-cell;
-  vertical-align: top; }
+  flex: 0 1 auto; }
   .media-object-section:first-child {
     padding-right: 1rem; }
   .media-object-section:last-child:not(:nth-child(2)) {
     padding-left: 1rem; }
   .media-object-section > :last-child {
     margin-bottom: 0; }
-  .media-object-section.middle {
-    vertical-align: middle; }
-  .media-object-section.bottom {
-    vertical-align: bottom; }
+  .media-object-section.main-section {
+    flex: 1 1 0px; }

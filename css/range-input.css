@@ -1,21 +1,19 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: block;
   width: 100%;
   height: auto;
-  cursor: pointer;
   margin-top: 0.45rem;
   margin-bottom: 0.45rem;
+  appearance: none;
   border: 0;
   line-height: 1;
-  border-radius: 3px; }
+  cursor: pointer; }
   input[type="range"]:focus {
     outline: 0; }
   input[type="range"][disabled] {
@@ -24,42 +22,39 @@ input[type="range"] {
     height: 0.5rem;
     background: #f6f6f6; }
   input[type="range"]::-webkit-slider-handle {
-    -webkit-appearance: none;
-    background: #1E8CC7;
     width: 1.4rem;
     height: 1.4rem;
     margin-top: -0.45rem;
-    border-radius: 3px; }
+    -webkit-appearance: none;
+    background: #1E8CC7; }
   input[type="range"]::-moz-range-track {
-    -moz-appearance: none;
     height: 0.5rem;
+    -moz-appearance: none;
     background: #f6f6f6; }
   input[type="range"]::-moz-range-thumb {
-    -moz-appearance: none;
-    background: #1E8CC7;
     width: 1.4rem;
     height: 1.4rem;
     margin-top: -0.45rem;
-    border-radius: 3px; }
+    -moz-appearance: none;
+    background: #1E8CC7; }
   input[type="range"]::-ms-track {
     height: 0.5rem;
-    background: #f6f6f6;
-    color: transparent;
     border: 0;
-    overflow: visible;
     border-top: 0.45rem solid #fff;
-    border-bottom: 0.45rem solid #fff; }
+    border-bottom: 0.45rem solid #fff;
+    background: #f6f6f6;
+    overflow: visible;
+    color: transparent; }
   input[type="range"]::-ms-thumb {
-    background: #1E8CC7;
     width: 1.4rem;
     height: 1.4rem;
     border: 0;
-    border-radius: 3px; }
+    background: #1E8CC7; }
   input[type="range"]::-ms-fill-lower {
     background: #cacaca; }
   input[type="range"]::-ms-fill-upper {
     background: #f6f6f6; }
   output {
-    line-height: 1.4rem;
     vertical-align: middle;
-    margin-left: 0.5em; }
+    margin-left: 0.5em;
+    line-height: 1.4rem; }

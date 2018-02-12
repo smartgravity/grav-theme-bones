@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -8,9 +8,14 @@
   position: relative;
   overflow: hidden; }
   .is-drilldown li {
-    display: block !important; }
+    display: block; }
+  .is-drilldown.animate-height {
+    transition: height 0.5s; }
 
-.is-drilldown-submenu {
+.drilldown a {
+  padding: 0.7rem 1rem;
+  background: #fff; }
+.drilldown .is-drilldown-submenu {
   position: absolute;
   top: 0;
   left: 100%;
@@ -18,39 +23,67 @@
   width: 100%;
   background: #fff;
   transition: transform 0.15s linear; }
-  .is-drilldown-submenu.is-active {
+  .drilldown .is-drilldown-submenu.is-active {
     z-index: 1;
     display: block;
     transform: translateX(-100%); }
-  .is-drilldown-submenu.is-closing {
+  .drilldown .is-drilldown-submenu.is-closing {
     transform: translateX(100%); }
-
-.is-drilldown-submenu-parent > a {
+  .drilldown .is-drilldown-submenu a {
+    padding: 0.7rem 1rem; }
+.drilldown .nested.is-drilldown-submenu {
+  margin-right: 0;
+  margin-left: 0; }
+.drilldown .drilldown-submenu-cover-previous {
+  min-height: 100%; }
+.drilldown .is-drilldown-submenu-parent > a {
   position: relative; }
-  .is-drilldown-submenu-parent > a::after {
-    content: '';
+  .drilldown .is-drilldown-submenu-parent > a::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 1rem;
     display: block;
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent transparent #1E8CC7;
-    border-left-style: solid;
+    content: '';
     border-right-width: 0;
-    position: absolute;
-    top: 50%;
-    margin-top: -6px;
-    right: 1rem; }
-
-.js-drilldown-back > a::before {
-  content: '';
+    border-left-style: solid;
+    border-color: transparent transparent transparent #1E8CC7; }
+.drilldown.align-left .is-drilldown-submenu-parent > a::after {
+  left: auto;
+  right: 1rem;
   display: block;
   width: 0;
   height: 0;
   border: inset 6px;
-  border-color: transparent #1E8CC7 transparent transparent;
-  border-right-style: solid;
+  content: '';
+  border-right-width: 0;
+  border-left-style: solid;
+  border-color: transparent transparent transparent #1E8CC7; }
+.drilldown.align-right .is-drilldown-submenu-parent > a::after {
+  right: auto;
+  left: 1rem;
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 6px;
+  content: '';
   border-left-width: 0;
+  border-right-style: solid;
+  border-color: transparent #1E8CC7 transparent transparent; }
+.drilldown .js-drilldown-back > a::before {
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 6px;
+  content: '';
+  border-left-width: 0;
+  border-right-style: solid;
+  border-color: transparent #1E8CC7 transparent transparent;
   border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0.75rem; }
+  margin-right: 0.75rem;
+  border-left-width: 0; }

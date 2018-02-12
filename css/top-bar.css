@@ -1,16 +1,16 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .top-bar {
-  padding: 0.5rem; }
-  .top-bar::before, .top-bar::after {
-    content: ' ';
-    display: table; }
-  .top-bar::after {
-    clear: both; }
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
     background-color: #f6f6f6; }
@@ -24,26 +24,36 @@
     width: auto; }
   .top-bar .top-bar-left,
   .top-bar .top-bar-right {
-    width: 100%; }
-  @media screen and (min-width: 40em) {
-    .top-bar .top-bar-left,
-    .top-bar .top-bar-right {
-      width: auto; } }
+    flex: 0 0 100%;
+    max-width: 100%; }
+  @media print, screen and (min-width: 40em) {
+    .top-bar {
+      flex-wrap: nowrap; }
+      .top-bar .top-bar-left {
+        flex: 1 1 auto;
+        margin-right: auto; }
+      .top-bar .top-bar-right {
+        flex: 0 1 auto;
+        margin-left: auto; } }
   @media screen and (max-width: 63.9375em) {
-    .top-bar.stacked-for-medium .top-bar-left,
-    .top-bar.stacked-for-medium .top-bar-right {
-      width: 100%; } }
+    .top-bar.stacked-for-medium {
+      flex-wrap: wrap; }
+      .top-bar.stacked-for-medium .top-bar-left,
+      .top-bar.stacked-for-medium .top-bar-right {
+        flex: 0 0 100%;
+        max-width: 100%; } }
   @media screen and (max-width: 74.9375em) {
-    .top-bar.stacked-for-large .top-bar-left,
-    .top-bar.stacked-for-large .top-bar-right {
-      width: 100%; } }
+    .top-bar.stacked-for-large {
+      flex-wrap: wrap; }
+      .top-bar.stacked-for-large .top-bar-left,
+      .top-bar.stacked-for-large .top-bar-right {
+        flex: 0 0 100%;
+        max-width: 100%; } }
 
 .top-bar-title {
-  float: left;
-  margin-right: 1rem; }
+  flex: 0 0 auto;
+  margin: 0.5rem 1rem 0.5rem 0; }
 
-.top-bar-left {
-  float: left; }
-
+.top-bar-left,
 .top-bar-right {
-  float: right; }
+  flex: 0 0 auto; }

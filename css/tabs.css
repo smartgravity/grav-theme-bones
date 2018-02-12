@@ -1,24 +1,26 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .tabs {
   margin: 0;
-  list-style-type: none;
+  border: 1px solid #f6f6f6;
   background: #fff;
-  border: 1px solid #f6f6f6; }
+  list-style-type: none; }
   .tabs::before, .tabs::after {
+    display: table;
     content: ' ';
-    display: table; }
+    flex-basis: 0;
+    order: 1; }
   .tabs::after {
     clear: both; }
 
 .tabs.vertical > li {
-  width: auto;
+  display: block;
   float: none;
-  display: block; }
+  width: auto; }
 
 .tabs.simple > li > a {
   padding: 0; }
@@ -28,7 +30,7 @@
 .tabs.primary {
   background: #1E8CC7; }
   .tabs.primary > li > a {
-    color: #fff; }
+    color: #1F1D0F; }
     .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
       background: #1d85bd; }
 
@@ -37,18 +39,22 @@
   .tabs-title > a {
     display: block;
     padding: 1.25rem 1.5rem;
+    font-size: 0.75rem;
     line-height: 1;
-    font-size: 0.75rem; }
+    color: #1E8CC7; }
     .tabs-title > a:hover {
-      background: #fff; }
+      background: #fff;
+      color: #1a78ab; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-      background: #f6f6f6; }
+      background: #f6f6f6;
+      color: #1E8CC7; }
 
 .tabs-content {
-  background: #fff;
-  transition: all 0.5s ease;
   border: 1px solid #f6f6f6;
-  border-top: 0; }
+  border-top: 0;
+  background: #fff;
+  color: #1F1D0F;
+  transition: all 0.5s ease; }
 
 .tabs-content.vertical {
   border: 1px solid #f6f6f6;

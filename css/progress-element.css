@@ -1,28 +1,27 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 progress {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: block;
   width: 100%;
   height: 1rem;
   margin-bottom: 1rem;
-  border-radius: 3px;
-  background: #cacaca;
-  border: 0; }
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  background: #cacaca; }
   progress::-webkit-progress-bar {
     background: #cacaca;
-    border-radius: 3px; }
+    border-radius: 0; }
   progress::-webkit-progress-value {
     background: #1E8CC7;
-    border-radius: 3px; }
+    border-radius: 0; }
   progress::-moz-progress-bar {
     background: #1E8CC7;
-    border-radius: 3px; }
+    border-radius: 0; }
   progress.primary {
     color: #1E8CC7; }
     progress.primary::-webkit-progress-value {
@@ -54,5 +53,5 @@ progress {
     progress.alert::-moz-progress-bar {
       background: #ec5840; }
   progress::-ms-fill {
-    border-radius: 3px;
+    border-radius: 0;
     border: 0; }

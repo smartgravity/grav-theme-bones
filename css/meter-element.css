@@ -1,37 +1,30 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 meter {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: block;
   width: 100%;
   height: 1rem;
   margin-bottom: 1rem;
-  border-radius: 3px;
-  background: #cacaca;
-  border: 0; }
+  /*! autoprefixer: off */
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background: #cacaca; }
   meter::-webkit-meter-bar {
-    background: #cacaca;
-    border-radius: 3px;
-    border: 0; }
-  meter::-webkit-meter-inner-element {
-    border-radius: 3px; }
+    border: 0;
+    background: #cacaca; }
   meter::-webkit-meter-optimum-value {
-    background: #3adb76;
-    border-radius: 3px; }
+    background: #3adb76; }
   meter::-webkit-meter-suboptimum-value {
-    background: #ffae00;
-    border-radius: 3px; }
+    background: #ffae00; }
   meter::-webkit-meter-even-less-good-value {
-    background: #ec5840;
-    border-radius: 3px; }
+    background: #ec5840; }
   meter::-moz-meter-bar {
-    background: #1E8CC7;
-    border-radius: 3px; }
+    background: #1E8CC7; }
   meter:-moz-meter-optimum::-moz-meter-bar {
     background: #3adb76; }
   meter:-moz-meter-sub-optimum::-moz-meter-bar {

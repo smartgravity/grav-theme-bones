@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -8,26 +8,28 @@
   margin-left: 0;
   margin-bottom: 1rem; }
   .pagination::before, .pagination::after {
+    display: table;
     content: ' ';
-    display: table; }
+    flex-basis: 0;
+    order: 1; }
   .pagination::after {
     clear: both; }
   .pagination li {
-    font-size: 0.875rem;
     margin-right: 0.0625rem;
-    border-radius: 3px;
+    border-radius: 0;
+    font-size: 0.875rem;
     display: none; }
     .pagination li:last-child, .pagination li:first-child {
       display: inline-block; }
-    @media screen and (min-width: 40em) {
+    @media print, screen and (min-width: 40em) {
       .pagination li {
         display: inline-block; } }
   .pagination a,
   .pagination button {
-    color: #1F1D0F;
     display: block;
     padding: 0.1875rem 0.625rem;
-    border-radius: 3px; }
+    border-radius: 0;
+    color: #1F1D0F; }
     .pagination a:hover,
     .pagination button:hover {
       background: #f6f6f6; }
@@ -43,18 +45,18 @@
     .pagination .disabled:hover {
       background: transparent; }
   .pagination .ellipsis::after {
-    content: '\2026';
     padding: 0.1875rem 0.625rem;
+    content: '\2026';
     color: #1F1D0F; }
 
 .pagination-previous a::before,
 .pagination-previous.disabled::before {
-  content: '\00ab';
   display: inline-block;
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  content: '\00ab'; }
 
 .pagination-next a::after,
 .pagination-next.disabled::after {
-  content: '\00bb';
   display: inline-block;
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  content: '\00bb'; }

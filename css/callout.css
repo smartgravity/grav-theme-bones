@@ -1,31 +1,36 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.2.4
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
 .callout {
+  position: relative;
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(31, 29, 15, 0.25);
-  border-radius: 3px;
-  position: relative;
-  color: #1F1D0F;
-  background-color: white; }
+  border-radius: 0;
+  background-color: white;
+  color: #1F1D0F; }
   .callout > :first-child {
     margin-top: 0; }
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
-    background-color: #daeff9; }
+    background-color: #daeff9;
+    color: #1F1D0F; }
   .callout.secondary {
-    background-color: #ebebeb; }
+    background-color: #ebebeb;
+    color: #1F1D0F; }
   .callout.success {
-    background-color: #e1faea; }
+    background-color: #e1faea;
+    color: #1F1D0F; }
   .callout.warning {
-    background-color: #fff3d9; }
+    background-color: #fff3d9;
+    color: #1F1D0F; }
   .callout.alert {
-    background-color: #fce6e2; }
+    background-color: #fce6e2;
+    color: #1F1D0F; }
   .callout.small {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
